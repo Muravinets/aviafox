@@ -1,5 +1,5 @@
 <?php
-get_header(); ?>
+get_header('home'); ?>
 
 <main>
     <section class="recomendations">

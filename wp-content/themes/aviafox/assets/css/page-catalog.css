@@ -1,0 +1,22 @@
+section.catalog
+{
+    background-color: white;
+}
+section.catalog h2
+{
+    color: #ebaa10;
+    color: #d27f3d;
+}
+section.catalog ul
+{
+    column-width: 13em;
+    margin-top: 1rem;
+}
+section.catalog ul a:hover
+{
+    text-decoration: underline;
+}
+section.catalog ul a:visited
+{
+    color: blueviolet;
+}
