@@ -1,0 +1,33 @@
+@CHARSET "UTF-8";
+
+body > footer
+{
+    background: #222;
+    color: #999;
+    text-align: center;
+}
+body > footer .sn h2
+{
+    font-size: 1.17rem;
+    font-weight: 300;
+    font-style: italic;
+}
+body > footer ul
+{
+    list-style-type: none;
+}
+body > footer a
+{
+    color: #999;
+}
+body > footer a:hover
+{
+    color: white;
+    text-decoration: underline;
+}
+
+body > footer .footer-links,
+body > footer .footer-copyright-container
+{
+    border-top: 2px solid rgba(153,153,153,.15);
+}

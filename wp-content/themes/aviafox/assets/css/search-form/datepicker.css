@@ -1,0 +1,148 @@
+@CHARSET "UTF-8";
+
+.datepicker {
+	border-radius: 0 !important;
+}
+
+.datepicker-dropdown {
+	padding: 5px 10px 0 10px;
+	height: 260px;
+}
+
+.datepicker-days {
+	font-family: 'Open Sans', arial, sans-serif
+}
+
+.twidget-container .input-daterange input 
+{
+/* Fix IOS Safari zoom on focus bug by Igor Muravinets */
+	color: transparent;
+/* 	font-size: 0; */
+	
+	text-align: left;
+	z-index: 1;
+}
+
+.input-daterange input:first-child {
+	border-radius: 0;
+}
+
+.datepicker table tr td.disabled, .datepicker table tr td.disabled:hover,
+	.datepicker table tr td.disabled.new {
+	color: #a9a9a9;
+}
+
+.twidget-date-text {
+	position: absolute;
+	left: 1rem;
+	bottom: 1rem;
+}
+
+.datepicker .datepicker-switch {
+	width: 160px;
+}
+
+.datepicker .datepicker-switch:hover, .datepicker .prev:hover,
+	.datepicker .next:hover, .datepicker tfoot tr th:hover {
+	background-color: transparent;
+}
+
+.datepicker .prev, .datepicker .next, .datepicker .prev:hover,
+	.datepicker .next:hover {
+	color: transparent;
+	background:
+		url("data:image/svg+xml,%3Csvg%20version%3D'1.2'%20baseProfile%3D'tiny'%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2030.6%2024.6'%3E%3Cpath%20fill%3D'%2300B9FF'%20d%3D'M.6%2010.8l.2-.2%209.9-10c.8-.8%202.2-.8%203%200l.3.2c.8.8.8%202.2%200%203L7.9%2010h20.6c1.2%200%202.1%201%202.1%202.1v.3c0%201.2-1%202.1-2.1%202.1H7.9l6.2%206.2c.8.8.8%202.2%200%203l-.3.3c-.8.8-2.2.8-3%200L.8%2014l-.2-.2c-.8-.8-.8-2.2%200-3z'%2F%3E%3C%2Fsvg%3E")
+		no-repeat 8px 6px;
+	background-size: 16px;
+}
+
+.datepicker .next {
+	-webkit-transform: rotate(180deg) !important;
+	-ms-transform: rotate(180deg) !important;
+	-o-transform: rotate(180deg) !important;
+	transform: rotate(180deg) !important;
+}
+
+.datepicker thead tr:last-child {
+	text-transform: uppercase;
+	font-size: 10px;
+}
+
+.datepicker table tr td, .datepicker table tr th {
+	border-radius: 0;
+	width: 32px;
+	height: 25px;
+	line-height: 24px;
+	display: inline-block;
+	padding: 0 !important;
+}
+
+.datepicker table tr td, .datepicker table tr td.new, .datepicker table tr td.range
+	{
+	color: #00B9FF;
+}
+
+.datepicker table tr td.day:hover, .datepicker table tr td.focused {
+	color: black;
+}
+
+.datepicker-days tr {
+	border-bottom: 3px solid white;
+}
+
+.datepicker-days .day.range-end {
+	background:
+		url("data:image/svg+xml,%3Csvg%20version%3D'1.2'%20baseProfile%3D'tiny'%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2026%2022'%3E%3Cpath%20fill%3D'%2300B9FF'%20d%3D'M4.3%2022H26V0H4.3L0%2011z'%2F%3E%3C%2Fsvg%3E")
+		no-repeat right;
+	background-color: #f5f5f5;
+	color: white;
+}
+
+.datepicker-days .day.range-start {
+	background:
+		url("data:image/svg+xml,%3Csvg%20version%3D'1.2'%20baseProfile%3D'tiny'%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2026%2022'%3E%3Cpath%20fill%3D'%2300B9FF'%20d%3D'M21.7%2022H0V0h21.7L26%2011z'%2F%3E%3C%2Fsvg%3E")
+		no-repeat;
+	background-color: #f5f5f5;
+	padding-right: 3px !important;
+	color: white;
+}
+
+.datepicker table tr td.active:active, .datepicker table tr td.active.highlighted:active,
+	.datepicker table tr td.active.active, .datepicker table tr td.active.highlighted.active
+	{
+	background-color: #f5f5f5;
+}
+
+.datepicker table tr td.selected:hover, .datepicker table tr td.selected.highlighted:hover
+	{
+	background-color: #00B9FF;
+}
+
+.datepicker table tr td.range {
+	background-color: #f5f5f5;
+}
+
+.datepicker table tr td.active:active:hover, .datepicker table tr td.active.highlighted:active:hover,
+	.datepicker table tr td.active.active:hover, .datepicker table tr td.active.highlighted.active:hover,
+	.datepicker table tr td.active:active:focus, .datepicker table tr td.active.highlighted:active:focus,
+	.datepicker table tr td.active.active:focus, .datepicker table tr td.active.highlighted.active:focus,
+	.datepicker table tr td.active:active.focus, .datepicker table tr td.active.highlighted:active.focus,
+	.datepicker table tr td.active.active.focus, .datepicker table tr td.active.highlighted.active.focus
+	{
+	background-color: #00B9FF;
+}
+
+.datepicker-cancel-return-date {
+	color: #ffaf1a !important;
+	position: absolute;
+	display: block !important;
+	margin-top: 0;
+	left: 43px;
+	width: 160px !important;
+	line-height: 17px;
+	border: 1px solid #ffa600 !important;
+	border-radius: 40px !important;
+	text-align: center !important;
+	font-size: 11px;
+	cursor: pointer;
+}
