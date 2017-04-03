@@ -1,4 +1,14 @@
 <footer>
+	<?php
+	require_once MDLD . '/SN/View/Widget.php';
+
+	$widget = new \SN\View\Widget;
+	if (is_front_page()) :
+		$widget->setTitle('Понравился сервис? Расскажи о нас друзьям.');
+	endif;
+	$widget->render();
+	?>
+
     <section class="footer-links">
         <ul>
 			<?php if (!is_page('cities')) { ?>

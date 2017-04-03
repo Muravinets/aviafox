@@ -1,4 +1,8 @@
-<?php get_header('home') ?>
+<?php
+define('MDLD', __DIR__ . '/../../../models');
+
+get_header('home');
+?>
 
 <main>
     <section class="recomendations">

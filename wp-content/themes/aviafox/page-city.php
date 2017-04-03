@@ -2,8 +2,7 @@
 /*
 Template Name: City
 */
-?>
-<?php
+
 define('MDLD', __DIR__ . '/../../../models');
 
 require_once MDLD . '/City/Data/Russians.php';
@@ -15,8 +14,9 @@ $object->loadData();
 $wp_query->query_vars['city'] = $object;
 
 $H1 = 'Дешевые авиабилеты. Город ' . $object->getTitle() . '.';
+
+get_header('city');
 ?>
-<?php get_header('city') ?>
 <main class="city-page">
     <h1><?php echo $H1 ?></h1>
 
