@@ -1,0 +1,43 @@
+section.intro
+{
+    padding: .5rem 1rem;
+}
+section.intro > section
+{
+    margin: 0;
+    padding: 0;
+}
+@media (min-width: 400px)
+{
+    section.intro > section.popular-destinations,
+    section.intro > section.city-content
+    {
+        padding: .5rem;
+    }
+}
+
+@media (min-width: 639px)
+{
+    section.intro
+    {
+        display: flex;
+        flex-flow: row wrap;
+    }
+    section.intro > section.popular-destinations
+    {
+        flex: 1 0 17rem;
+        flex: 1 1 auto;
+    }
+    section.intro > section.city-content
+    {
+        flex: 1 0 33rem;
+        flex: 1 1 auto;
+        flex: 1 0 50%;
+            /*margin: .5rem .5rem 0;*/
+    }
+}
+
+section.special-offers
+{
+    padding: .5rem .33rem 1rem;
+}

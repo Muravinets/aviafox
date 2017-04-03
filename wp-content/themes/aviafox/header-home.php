@@ -24,22 +24,11 @@
 
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" />
 
-<!--SF css files-->
-<link rel="stylesheet prefetch" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.6.0/css/bootstrap-datepicker3.standalone.css" />
-<link rel="stylesheet" type="text/css" href="<?php bloginfo('template_directory') ?>/assets/css/search-form/layout.css?v=3.9" />
-<link rel="stylesheet" type="text/css" href="<?php bloginfo('template_directory') ?>/assets/css/search-form/style.css?v=3.1" />
-<link rel="stylesheet" type="text/css" href="<?php bloginfo('template_directory') ?>/assets/css/search-form/datepicker.css?v=2" />
-
 <script src="<?php bloginfo('template_directory') ?>/assets/js/jquery.js"></script>
 
-<!--SF js files-->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-dateFormat/1.0/jquery.dateFormat.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.6.0/js/bootstrap-datepicker.min.js"></script>
+<?php get_template_part('template-parts/head/sf') ?>
 
-<script src="<?php bloginfo('template_directory') ?>/assets/js/jquery.twidget.js?v=4.0"></script>
-
-<link rel="stylesheet" type="text/css" href="<?php bloginfo('template_directory') ?>/assets/css/footer/layout.css?v=3.1" media="all" />
-<link rel="stylesheet" type="text/css" href="<?php bloginfo('template_directory') ?>/assets/css/footer/styles.css?v=3.3.3" media="all" />
+<?php get_template_part('template-parts/head/footer') ?>
 
 <?php wp_head(); ?>
 </head>

@@ -4,6 +4,7 @@ namespace City;
 
 require_once 'Object.php';
 use City\Error\CodeNotFound;
+use City\Error\UriNotFound;
 use City\Object;
 
 /**
@@ -14,7 +15,7 @@ class Data
 {
     
     /**
-     * @var array
+     * @var Object[]
      */
     protected $data;
 
@@ -45,6 +46,26 @@ class Data
         }
 
         return $this->data[$value];
+    }
+
+    /**
+     * @param string $value
+     * @return Object
+     * @throws UriNotFound
+     */
+    public function findUri(string $value) : Object
+    {
+	    /* @var $object \City\Object */
+	    foreach ($this->data as $object)
+	    {
+	    	if ($object->getUriName() === $value)
+	    	{
+	    		return $object;
+		    }
+	    }
+
+        require_once __DIR__ . '/Error/UriNotFound.php';
+        throw new UriNotFound($value);
     }
 
     /**

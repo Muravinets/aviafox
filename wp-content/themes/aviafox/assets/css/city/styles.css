@@ -1,0 +1,34 @@
+main.city-page section p
+{
+    text-indent: 0;
+}
+
+section.city-content h2
+{
+    color: #ebaa10;
+    color: #d27f3d;
+}
+
+section.popular-destinations h2
+{
+    color: #33a58c;
+}
+section.special-offers h2
+{
+    color: #d27f3d;
+}
+
+section.city-hotels-map h2
+{
+    color: #33a58c;
+}
+
+section.city-airports
+{
+    background-color: #f2f2f2;
+}
+section.city-airports h2
+{
+    color: #ebaa10;
+    color: #d27f3d;
+}

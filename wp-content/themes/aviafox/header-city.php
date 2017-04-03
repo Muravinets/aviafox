@@ -19,8 +19,14 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 <?php get_template_part('template-parts/head/standart') ?>
+
 <link rel="stylesheet" type="text/css" href="<?php bloginfo('template_directory') ?>/assets/css/page-catalog.css?v=1.0">
+
 <?php get_template_part('template-parts/head/sf') ?>
+
+<link rel="stylesheet" type="text/css" href="<?php bloginfo('template_directory') ?>/assets/css/city/layout.css?v=5.0" />
+<link rel="stylesheet" type="text/css" href="<?php bloginfo('template_directory') ?>/assets/css/city/styles.css?v=5.0" />
+
 <?php get_template_part('template-parts/head/footer') ?>
 
 <?php wp_head() ?>
