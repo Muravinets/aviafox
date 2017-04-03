@@ -1,13 +1,13 @@
 <footer>
     <section class="footer-links">
         <ul>
-			<?php if (!isset($isPageCities)) { ?>
+			<?php if (!is_page('cities')) { ?>
                 <li class="footer-cities"><a href="/cities/">Список городов</a></li>
 			<?php } ?>
-			<?php if (!isset($isPageCountries)) { ?>
+			<?php if (!is_page('countries')) { ?>
                 <li class="footer-cities"><a href="/countries/">Список стран</a></li>
 			<?php } ?>
-			<?php if (!isset($isPageContact)) { ?>
+			<?php if (!is_page('contacts')) { ?>
                 <li class="footer-cities"><a href="/contact/">Контакты</a></li>
 			<?php } ?>
         </ul>

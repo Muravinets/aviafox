@@ -5,7 +5,6 @@ Template Name: Cities
 ?>
 <?php
 define('MDLD', __DIR__ . '/../../../models');
-$isPageCities = true;
 
 require_once MDLD . '/City/Data/Russians.php';
 $data = new City\Data\Russians();
@@ -14,8 +13,7 @@ $cities = $data->getList('title');
 ksort($cities);
 
 ?>
-<?php
-get_header('cities'); ?>
+<?php get_header('cities') ?>
 
 <main>
 	<section class="catalog">

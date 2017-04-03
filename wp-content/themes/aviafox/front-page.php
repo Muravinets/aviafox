@@ -1,5 +1,4 @@
-<?php
-get_header(); ?>
+<?php get_header('home') ?>
 
 <main>
     <section class="recomendations">
@@ -26,8 +25,8 @@ get_header(); ?>
         </div>
     </section>
 
-	<?php get_template_part( 'template-parts/home/content' ) ?>
-	<?php get_template_part( 'template-parts/home/avia', 'partners' ) ?>
+	<?php get_template_part('template-parts/home/content') ?>
+	<?php get_template_part('template-parts/home/avia', 'partners') ?>
 </main>
 
 <?php get_footer();
