@@ -36,11 +36,6 @@ class Object
     public $timeZone;
 
     /**
-     * @var string
-     */
-    private $content;
-
-    /**
      * @var \Country\Object
      */
     private $country;
@@ -111,8 +106,6 @@ class Object
         $this->title = $data->title;
         $this->titleDestination = $data->titleDestination;
         $this->titleFrom = $data->titleFrom;
-        $this->content = $data->content;
-        $this->airlines = $data->airlines;
     }
 
     /**
@@ -121,14 +114,6 @@ class Object
     public function getCode() : string
     {
         return $this->code;
-    }
-
-    /**
-     * @return array
-     */
-    public function getContent() : array
-    {
-        return $this->content;
     }
 
     /**

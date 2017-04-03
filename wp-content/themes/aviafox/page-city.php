@@ -10,6 +10,8 @@ require_once MDLD . '/City/Data/Russians.php';
 $data = new City\Data\Russians();
 
 $object = $data->findUri('moscow');
+$wp_query->query_vars['city'] = $object;
+
 $H1 = 'Дешевые авиабилеты. Город ' . $object->getTitle() . '.';
 ?>
 <?php get_header('city') ?>
@@ -20,18 +22,14 @@ $H1 = 'Дешевые авиабилеты. Город ' . $object->getTitle() .
         <section class="city-content">
 	        <?php
 	        while ( have_posts() ) : the_post();
-
 		        get_template_part( 'template-parts/page/content', 'page' );
-
-		        // If comments are open or we have at least one comment, load up the comment template.
-		        if ( comments_open() || get_comments_number() ) :
-			        comments_template();
-		        endif;
-
 	        endwhile; // End of the loop.
 	        ?>
         </section>
     </section>
+
+    <?php if ($_SERVER['REMOTE_ADDR'] != '127.0.0.1') get_template_part('template-parts/city/cheaptickets') ?>
+    <?php //locate_template('template-parts/city/cheaptickets.php', true); ?>
 
 </main>
 
