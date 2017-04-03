@@ -50,10 +50,10 @@ class Data
 
     /**
      * @param string $value
-     * @return Object
+     * @return \City\Object
      * @throws UriNotFound
      */
-    public function findUri(string $value) : Object
+    public function findUri(string $value) : \City\Object
     {
 	    /* @var $object \City\Object */
 	    foreach ($this->data as $object)

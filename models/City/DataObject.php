@@ -11,17 +11,26 @@ class DataObject
     private $name;
 
     /**
-     * @var \City\Object
+     * @var array
      */
-    private $object;
+    private $data;
+
+    public function getData()
+    {
+    	$this->load();
+
+    	return $this->data;
+    }
 
     /**
      * @return Object
      */
-    public function getObject()
+    public function getObject() : Object
     {
-        $this->load();
-        return $this->object;
+	    $object = new Object();
+	    $object->importSingleJSON($this->getData());
+
+        return $object;
     }
 
     /**
@@ -56,7 +65,6 @@ class DataObject
         $filePath = $this->getDataPath();
         $json = file_get_contents($filePath);
 
-        $this->object = new Object();
-        $this->object->importSingleJSON(json_decode($json));
+        $this->data = json_decode($json);
     }
 }
