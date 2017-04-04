@@ -31,9 +31,10 @@ class PopularDestinations
         $this->destinationCode = $destinationCode;
     }
 
-    public function render()
+    public function render() : string
     {
-        include TPLD . '/tp/widget/popular-destinations.php';
+    	$html = '<script async src="' . $this->getSrc() . '" charset="UTF-8"></script>';
+        return $html;
     }
 
     /**

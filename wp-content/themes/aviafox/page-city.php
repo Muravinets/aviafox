@@ -8,7 +8,11 @@ define('MDLD', __DIR__ . '/../../../models');
 require_once MDLD . '/City/Data/Russians.php';
 $data = new City\Data\Russians();
 
-$object = $data->findUri('moscow');
+$link = trim(get_page_link(get_the_ID()), "/");
+$linkParts = explode('/', $link);
+$cityName = $linkParts[count($linkParts) - 1];
+
+$object = $data->findUri($cityName);
 $object->loadData();
 
 $wp_query->query_vars['city'] = $object;

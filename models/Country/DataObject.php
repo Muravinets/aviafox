@@ -10,19 +10,7 @@ class DataObject
      */
     private $id;
 
-    /**
-     * @var \Country\Object
-     */
-    private $object;
-
-    /**
-     * @return \Country\Object
-     */
-    public function getObject()
-    {
-        $this->load();
-        return $this->object;
-    }
+    private $data;
 
     /**
      * DataObject constructor.
@@ -31,6 +19,24 @@ class DataObject
     public function __construct(\Country\Object $object)
     {
         $this->id = strtolower($object->getCode());
+    }
+
+    public function getData()
+    {
+	    $this->load();
+
+    	return $this->data;
+    }
+
+    /**
+     * @return \Country\Object
+     */
+    public function getObject() : \Country\Object
+    {
+	    $object = new Object();
+	    $object->importSingleJSON($this->getData());
+
+	    return $object;
     }
 
     /**
@@ -55,7 +61,6 @@ class DataObject
         $filePath = $this->getDataPath();
         $json = file_get_contents($filePath);
 
-        $this->object = new Object();
-        $this->object->importSingleJSON(json_decode($json));
+        $this->data = json_decode($json);
     }
 }

@@ -1,0 +1,25 @@
+section.country-popular-destinations
+{
+    padding-left: .5rem;
+    padding-right: .5rem;
+}
+section.country-popular-destinations > ul
+{
+    display: flex;
+    flex-flow: row wrap;
+}
+section.country-popular-destinations > ul > li
+{
+    flex: 1 0 17rem;
+    margin: .5rem .5rem 0;
+}
+
+section.country-cities-prices ul
+{
+    column-width: 21em;
+    margin-top: 1rem;
+}
+section.country-cities-prices li
+{
+    padding-top: .63rem;
+}

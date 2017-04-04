@@ -54,6 +54,19 @@ class Object
         return $dataObject->hasData();
     }
 
+	public function loadData()
+	{
+		require_once __DIR__ . '/DataObject.php';
+		$dataObject = new DataObject($this);
+		if (!$dataObject->hasData())
+		{
+			require_once __DIR__ . '/Error.php';
+			throw new Error('Data for country ' . $this->name . ' not found');
+		}
+
+		$this->importSingleJSON($dataObject->getData());
+	}
+
     /**
      * @return string
      */

@@ -30,7 +30,7 @@ class Data
      * @return \Country\Object
      * @throws Error\CodeNotFound
      */
-    public function findCode($code)
+    public function findCode($code) : \Country\Object
     {
         if (!isset($this->data[$code]))
         {
@@ -46,7 +46,7 @@ class Data
      * @return \Country\Object
      * @throws Error\UriNotFound
      */
-    public function findUri($uri)
+    public function findUri($uri) : \Country\Object
     {
         /* @var $object \Country\Object */
         foreach ($this->data as $object)
@@ -62,7 +62,7 @@ class Data
     }
 
     /**
-     * @return array
+     * @return \Country\Object[]
      */
     public function getAll() : array
     {
@@ -84,7 +84,7 @@ class Data
 
         foreach ($data as $row)
         {
-            $object = new Object;
+            $object = new \Country\Object;
             $object->importAllJSON($row);
             $this->data[$object->getCode()] = $object;
         }
