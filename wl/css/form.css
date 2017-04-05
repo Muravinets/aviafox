@@ -1,0 +1,44 @@
+@CHARSET "UTF-8";
+
+.mewtwo-widget--whitelabel_ru .mewtwo-tabs-tabs_list__item
+{
+	background-color: #009ec7 !important;
+	color: #FFFFFF !important;
+}
+
+.mewtwo-widget--whitelabel_ru .mewtwo-tabs-tabs_list__item span {
+	color: #FFFFFF !important;
+}
+
+.mewtwo-widget--whitelabel_ru .mewtwo-tabs-tabs_list__item:first-child {
+	border-top-left-radius: 0px !important;
+}
+
+.mewtwo-widget--whitelabel_ru .mewtwo-tabs-tabs_list__item:last-child {
+	border-top-right-radius: 0px !important;
+}
+
+.mewtwo-widget--whitelabel_ru .mewtwo-tabs-tabs_list__item.mewtwo-tabs-tabs_list__item--active
+	{
+	background-color: #00AFDD !important;
+	border: 1px solid #EEEEEE !important;
+}
+
+.mewtwo-widget--whitelabel_ru .mewtwo-tabs-tabs_list__item--active:after
+	{
+	background-color: #00AFDD !important;
+}
+
+.mewtwo-widget--whitelabel_ru .mewtwo-tabs-tabs_list__item--hotels:before
+	{
+	background-image:
+		url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20690%20340%22%3E%3Cg%20fill%3D%22%23FFFFFF%22%3E%3Cpath%20d%3D%22M86.2%2014.2C86.2%206.6%2092.8%200%20100.4%200h21.8c8.1%200%2014.7%206.6%2014.7%2014.2v311.1c0%208.1-6.6%2014.2-14.2%2014.2h-22.3c-7.6.5-14.2-5.6-14.2-13.7V14.2zM552.6%20133c0-8.1%206.6-14.2%2014.2-14.2h21.8c8.1%200%2014.2%206.6%2014.2%2014.2v192.8c0%208.1-6.6%2014.2-14.2%2014.2h-21.8c-8.1%200-14.2-6.6-14.2-14.2V133zM170.9%20182.7c-8.1%200-14.2-6.6-14.2-14.2v-21.8c0-8.1%206.6-14.2%2014.2-14.2h102c8.1%200%2014.2%206.6%2014.2%2014.2v21.8c0%208.1-6.6%2014.2-14.2%2014.2h-102z%22%2F%3E%3Cpath%20d%3D%22M111.6%20200.4H578v70.5H111.6z%22%2F%3E%3Ccircle%20cx%3D%22221.7%22%20cy%3D%22111.1%22%20r%3D%2246.2%22%2F%3E%3Cpath%20d%3D%22M532.3%20119.8c0-7.1-4.6-13.2-11.2-15.7-28.9-9.6-113.7-33-198.9-31-9.1%200-16.2%207.6-16.2%2016.7v92.9h225.8v-62.9h.5z%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E")
+		!important;
+}
+
+.mewtwo-widget--whitelabel_ru .mewtwo-tabs-tabs_list__item.mewtwo-tabs-tabs_list__item--flights:before
+	{
+	background-image:
+		url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20690%20340%22%3E%3Cpath%20fill%3D%22%23FFFFFF%22%20d%3D%22M261%2C340h36.2l81.2-144.7h93.3c0%2C0%2C54.2%2C0%2C54.2-25.3s-54.2-25.3-54.2-25.3h-93.4L297%2C0h-36.2l45%2C144.7H241%20l-40.7-36.2h-36.2L193%2C170l-28.9%2C61.5h36.2l40.7-36.2h65L261%2C340z%22%2F%3E%3C%2Fsvg%3E")
+		!important;
+}

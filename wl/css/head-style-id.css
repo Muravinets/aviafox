@@ -1,0 +1,21 @@
+@CHARSET "UTF-8";
+
+/* White label tag head styles with id */
+
+/* tpwl-css-header */
+body .TPWL-template-header
+{
+	background: #00AFDD;
+}
+
+body .TPWL-header-content {
+	background: #00AFDD;
+}
+
+body .TPWL-header-content__descrition {
+	color: #FFFFFF;
+}
+
+body .TPWL-header-content .TPWL-header-content__label {
+	color: #FFFFFF;
+}

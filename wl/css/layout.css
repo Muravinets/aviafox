@@ -1,0 +1,70 @@
+@CHARSET "UTF-8";
+
+img {
+    width: auto\9;
+    height: auto;
+    max-width: 100%;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+/************************************************/
+/*			 		Header 	 					*/
+/************************************************/
+body > header
+{
+	width: 100%;
+}
+
+body > header > section.top-bar
+{
+	position: relative;
+	padding: 1rem 0;
+}
+
+body > header h1
+{
+	margin: 0;
+}
+
+body > header h1,
+body > header .logo
+{
+	width: 100%;
+	text-align: center;
+	z-index: 2;
+}
+
+body > header .logo img
+{
+	width: 25%;
+}
+
+body > .bg-image
+{
+	position: absolute;
+	top: 0;
+}
+
+body > .bg-image img 
+{
+    display: block;
+    width: 100%;
+}
+
+/************************************************/
+/*			 		TPWL Widget					*/
+/************************************************/
+.TPWL-widget
+{
+	position: relative;
+}
+
+/************************************************/
+/*			 		Footer 	 					*/
+/************************************************/
+body > footer
+{
+    padding: 2rem;
+	position: relative;
+}
