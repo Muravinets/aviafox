@@ -18,7 +18,7 @@
                 <li class="footer-cities"><a href="/countries/">Список стран</a></li>
 			<?php } ?>
 			<?php if (!is_page('contacts')) { ?>
-                <li class="footer-cities"><a href="/contact/">Контакты</a></li>
+<!--                <li class="footer-cities"><a href="/contact/">Контакты</a></li>-->
 			<?php } ?>
         </ul>
         <ul>
