@@ -15,13 +15,15 @@
  * @version 1.0
  */
 
-get_header(); ?>
+define('MDLD', __DIR__ . '/../../../models');
+echo 'Hello Index';
 
-<div class="wrap">
+//get_header(); ?>
+
+<main>
+
 	<?php if ( is_home() && ! is_front_page() ) : ?>
-		<header class="page-header">
-			<h1 class="page-title"><?php single_post_title(); ?></h1>
-		</header>
+        <h1><?php single_post_title(); ?></h1>
 	<?php else : ?>
 	<header class="page-header">
 		<h2 class="page-title"><?php _e( 'Posts', 'twentyseventeen' ); ?></h2>
@@ -61,7 +63,7 @@ get_header(); ?>
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
-	<?php get_sidebar(); ?>
-</div><!-- .wrap -->
+<!--	--><?php //get_sidebar(); ?>
+</main>
 
 <?php get_footer();
