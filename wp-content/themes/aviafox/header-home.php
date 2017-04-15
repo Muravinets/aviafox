@@ -18,8 +18,8 @@
 <meta charset="<?php bloginfo( 'charset' ) ?>">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<title>Aviafox.com - сайт дешевых авиабилетов. Акции авиакомпаний.</title>
-<meta name="description" content="Преимущества нашего сайта – возможность легко найти самые дешевые авиабилеты, удобные в пользовании инструменты поиска, надежные партнеры." />
+<title><?php single_post_title() ?></title>
+
 <meta name="yandex-verification" content="6ab1516b9435398d" />
 
 <link href="/favicon.ico" rel="icon" type="image/x-icon" />
@@ -37,7 +37,7 @@
 
 <?php get_template_part('template-parts/head/footer') ?>
 
-<?php //wp_head() ?>
+<?php wp_head() ?>
 </head>
 
 <body>

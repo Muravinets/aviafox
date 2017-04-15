@@ -11,13 +11,12 @@
  * @since 1.0
  * @version 1.0
  */
-$pageTitle = single_post_title('', false);
 
 ?><!DOCTYPE html>
 <html <?php language_attributes() ?>>
 <head>
 
-    <title><?php echo $pageTitle ?></title>
+    <title><?php single_post_title() ?></title>
 
 	<?php get_template_part('template-parts/head/standart') ?>
 
