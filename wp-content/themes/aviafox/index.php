@@ -16,9 +16,9 @@
  */
 
 define('MDLD', __DIR__ . '/../../../models');
-echo 'Hello Index';
+//echo 'Hello Index';
 
-//get_header(); ?>
+get_header(); ?>
 
 <main>
 

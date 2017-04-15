@@ -11,15 +11,13 @@
  * @since 1.0
  * @version 1.0
  */
-$pageTitle = 'Блог';
-$pageDescription = 'Список постов';
+$pageTitle = single_post_title('', false);
 
 ?><!DOCTYPE html>
 <html <?php language_attributes() ?>>
 <head>
 
-<!--    <title>--><?php //echo $pageTitle ?><!--</title>-->
-    <meta name="description" content="<?php echo $pageDescription ?>" />
+    <title><?php echo $pageTitle ?></title>
 
 	<?php get_template_part('template-parts/head/standart') ?>
 

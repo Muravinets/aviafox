@@ -2,6 +2,7 @@
 /*
     Template Name: Blog
 */
+echo 'Hello blog';
 ?>
 <?php get_header(); ?>
 

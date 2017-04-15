@@ -21,14 +21,14 @@
 	<header class="entry-header">
 		<?php
 			if ( 'post' === get_post_type() ) :
-				echo '<div class="entry-meta">';
+//				echo '<div class="entry-meta">';
 					if ( is_single() ) :
 //						twentyseventeen_posted_on();
 					else :
-						echo twentyseventeen_time_link();
-						twentyseventeen_edit_link();
+//						echo twentyseventeen_time_link();
+//						twentyseventeen_edit_link();
 					endif;
-				echo '</div><!-- .entry-meta -->';
+//				echo '</div><!-- .entry-meta -->';
 			endif;
 
 			if ( is_single() ) {
