@@ -11,7 +11,7 @@ $data = new City\Data\Russians();
 $cities = $data->getList('title');
 ksort($cities);
 
-get_header('cities');
+get_header();
 ?>
 
 <main>

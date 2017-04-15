@@ -18,7 +18,7 @@
 <meta charset="<?php bloginfo( 'charset' ) ?>">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<title><?php single_post_title() ?></title>
+<title></title>
 
 <meta name="yandex-verification" content="6ab1516b9435398d" />
 

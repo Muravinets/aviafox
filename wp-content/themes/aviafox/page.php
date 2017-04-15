@@ -2,11 +2,6 @@
 
 define('MDLD', __DIR__ . '/../../../models');
 
-//$wp_query->query_vars['title'] = 'Aviafox.com - Согласие с рассылкой';
-$wp_query->query_vars['pageTitle'] = 'Aviafox.com - ' . get_the_title();
-
-$H1 = 'Согласие с рассылкой';
-
 get_header('page');
 ?>
 <main>

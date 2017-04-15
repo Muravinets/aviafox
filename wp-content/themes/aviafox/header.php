@@ -16,7 +16,7 @@
 <html <?php language_attributes() ?>>
 <head>
 
-    <title><?php single_post_title() ?></title>
+    <title></title>
 
 	<?php get_template_part('template-parts/head/standart') ?>
 

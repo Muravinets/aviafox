@@ -17,7 +17,7 @@ uasort($list, function (Object $a, Object $b) {
 	return strcmp($a->getTitle(), $b->getTitle());
 });
 
-get_header('countries');
+get_header();
 ?>
 
 <main>

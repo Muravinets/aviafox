@@ -1,15 +1,11 @@
 <?php
 /* @var $object \Country\Object */
 
-$pageTitle = 'Авиабилеты онлайн в ' . $object->getTitleDestination() . ' по самым низким ценам из существующих.';
-$pageDescription = 'Сайт дешевых авиабилетов - aviafox.com. Поможем найти авиабилеты во все страны мира. Удобный поиск.';
-
 ?><!DOCTYPE html>
 <html <?php language_attributes() ?>>
 <head>
 
-<title><?php echo $pageTitle ?></title>
-<meta name="description" content="<?php echo $pageDescription ?>" />
+<title></title>
 
 <?php get_template_part('template-parts/head/standart') ?>
 
@@ -19,6 +15,7 @@ $pageDescription = 'Сайт дешевых авиабилетов - aviafox.com
 <?php get_template_part('template-parts/head/sf') ?>
 <?php get_template_part('template-parts/head/footer') ?>
 
+<?php wp_head() ?>
 </head>
 
 <body>
