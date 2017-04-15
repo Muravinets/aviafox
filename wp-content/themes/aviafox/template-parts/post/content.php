@@ -47,7 +47,7 @@
 		</div><!-- .post-thumbnail -->
 	<?php endif; ?>
 
-	<section class="entry-content">
+	<div class="entry-content">
 		<?php
 			/* translators: %s: Name of current post */
 			the_content( sprintf(
@@ -62,7 +62,7 @@
 				'link_after'  => '</span>',
 			) );
 		?>
-	</section><!-- .entry-content -->
+	</div><!-- .entry-content -->
 
 <!--	--><?php //if ( is_single() ) : ?>
 <!--		--><?php //twentyseventeen_entry_footer(); ?>

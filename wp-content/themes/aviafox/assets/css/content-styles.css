@@ -5,6 +5,10 @@ main
     background-color: white;
 }
 
+main article
+{
+    border-top: 2px solid rgba(153,153,153,.15);
+}
 main section.intro
 {
     background-color: white;
@@ -47,10 +51,17 @@ main h2
     }
 }
 
-section.content h2
+section.content h2,
+article h2,
+article h2 a,
+article h2 a:visited
 {
     color: #ebaa10;
     color: #d27f3d;
+}
+article h2 a:hover
+{
+    text-decoration: underline;
 }
 
 /************************************************/
@@ -122,4 +133,12 @@ section.city-cheapest .link-to-all a:hover
 {
     color: #666;
     /*text-decoration: underline;*/
+}
+
+/************************************************/
+/*			 		Posts 			        	*/
+/************************************************/
+section.posts a.more-link:hover
+{
+    text-decoration: underline;
 }

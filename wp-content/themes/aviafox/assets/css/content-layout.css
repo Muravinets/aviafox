@@ -5,7 +5,7 @@ main
     position: relative;
     z-index: 1;
 }
-main section
+main section, main article
 {
     box-sizing: border-box;
     padding: 1rem;
@@ -14,7 +14,7 @@ main section
 }
 @media (min-width: 914px)
 {
-    main section
+    main section, main article
     {
         padding: 1.5rem;
     }
@@ -32,7 +32,7 @@ main h2
     text-align: center;
 }
 
-main section p
+main section p, main article p
 {
     margin: 0.63rem 0;
 }
@@ -94,4 +94,14 @@ section.city-cheapest .link-to-all
 {
     margin-right: .63rem;
     text-align: right;
+}
+
+/************************************************/
+/*			 		Posts 			        	*/
+/************************************************/
+
+main section.posts
+{
+    margin: 0;
+    padding: 0;
 }
