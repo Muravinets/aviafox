@@ -261,13 +261,13 @@
             /* remove with_request input from jetradar form */
             if (this.settings.locale == 'en') {
                 container.find('input[name="with_request"]').remove();
-                container.find('input[name="oneway"]').remove();
+                container.find('input[name="one_way"]').remove();
             }
 
             /* flight vars */
             var origin_iata_input       = container.find('input[name="origin_iata"]'),
                 destination_iata_input  = container.find('input[name="destination_iata"]'),
-                oneway_input            = container.find('input[name="oneway"]'),
+                oneway_input            = container.find('input[name="one_way"]'),
                 trip_class_input        = container.find('input[name="trip_class"]'),
                 pas_count_label         = container.find('#twidget-pas'),
             /* hotel vars */
@@ -439,7 +439,7 @@
                 iconReturnCal.show();
                 dateReturn.val('').css('font-size', '14px');
                 spanReturn.text('');
-                oneway_input.val(1);
+                oneway_input.val(true);
                 oneway_input.removeAttr('disabled');
             });
             dateReturn.focus(function(){

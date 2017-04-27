@@ -1,7 +1,7 @@
 <!--flight tab content-->
 <div id="twidget-tab1" class="twidget-tab active">
     <div class="clearfix"></div>
-    <form action="https://wl.aviafox.com" method="get" autocomplete="off" target="_blank">
+    <form action="https://wl.aviafox.com/flights" method="get" autocomplete="off" target="_blank">
         <ul class="twidget-form-list clearfix">
             <!-- origin input -->
             <li class="twidget-origin">
@@ -53,8 +53,8 @@
                     </div>
                 </div>
             </li>
-            <!-- oneway flag -->
-            <input type="hidden" name="oneway" disabled value="0">
+            <!-- one_way flag -->
+            <input type="hidden" name="one_way" disabled value="0">
             <!-- flight passengers -->
             <li class="twidget-passengers">
                 <label for="twidget-passengers-detail">Пассажиры/Класс</label>

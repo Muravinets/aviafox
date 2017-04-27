@@ -8,4 +8,4 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-dateFormat/1.0/jquery.dateFormat.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.6.0/js/bootstrap-datepicker.min.js"></script>
 
-<script src="<?php bloginfo('template_directory') ?>/assets/js/jquery.twidget.js?v=4.0"></script>
+<script src="<?php bloginfo('template_directory') ?>/assets/js/jquery.twidget.js?v=4.2"></script>
