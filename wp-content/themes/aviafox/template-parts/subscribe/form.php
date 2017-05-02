@@ -5,6 +5,7 @@
 		{
 			background-color: #f9f9f9;
             border-top: 2px solid rgba(153,153,153,.15);
+            border-bottom: 1px solid rgba(153,153,153,.15);
 			padding: 0 .5em;
 		}
         .form-outer
