@@ -3,12 +3,13 @@
 	<style id="subscribe-form-style" class="">
 		section.subscribe
 		{
-			background-color: #eeeeee;
+			background-color: #f9f9f9;
 			padding: 1.5rem .5rem;
 		}
 		section.subscribe h2
 		{
 			color: #33a58c;
+			color: #d27f3d;
 			font-size: 1.4rem;
 			font-weight: 300;
 			line-height: 1.5;
@@ -31,12 +32,11 @@
 			/*font-family: Arial, "Helvetica Neue", sans-serif;*/
 		}
 
-		.sp-form[sp-id="43653"] .sp-form-control {
+		.sp-form[sp-id="43653"] .sp-form-control
+        {
 			background: #ffffff;
-			border-color: #cccccc;
-			border-style: solid;
-			border-width: 1px;
-			font-size: 15px;
+            border: .083em solid #cccccc;
+            font-size: 15px;
 			padding-left: 8.75px;
 			padding-right: 8.75px;
 			border-radius: 4px;
@@ -46,15 +46,27 @@
 			width: 100%;
 		}
 
+        .sp-form[sp-id="43653"] .sp-form-control:focus
+        {
+            border-color: #ebaa10;
+            outline: none;
+        }
+
 		.sp-form[sp-id="43653"] .sp-button
         {
+            /* Orange */
             background-color: #d27f3d;
             background-image: -webkit-linear-gradient(-225deg,#d27f3d 55%,#ebaa10 55%);
             background-image: linear-gradient(-45deg,#d27f3d 55%,#ebaa10 55%);
 
-			-moz-border-radius: 4px;
-			-webkit-border-radius: 4px;
-			border-radius: 4px;
+            /* Green */
+            background-color: #33a58c;
+            background-image: -webkit-linear-gradient(-225deg,#33a58c 55%,#58bd91 55%);
+            background-image: linear-gradient(-45deg,#33a58c 55%,#58bd91 55%);
+
+			-moz-border-radius: .2em;
+			-webkit-border-radius: .2em;
+            border-radius: .2em;
 
 			box-shadow: none;
 			-moz-box-shadow: none;
@@ -64,10 +76,10 @@
 
 			font-weight: 400;
 			font-style: italic;
-			font-family: 'Roboto', sans-serif;;
+			font-family: 'Roboto', sans-serif;
             letter-spacing: .023em;
 
-            padding: 0 1em;
+            padding: 0 1.17em;
 			width: auto;
 		}
         .sp-form .sp-button:active
@@ -83,6 +95,11 @@
 		.sp-form[sp-id="43653"] .sp-button-container {
 			text-align: center;
 		}
+
+        .sp-message
+        {
+            font-family: 'Roboto', sans-serif;
+        }
 	</style>
 	<div id="sp-form-43653" sp-id="43653" sp-hash="3ad567cab496522a0940612f6996852bd1953ab173c953337523e1d84bef32e3"
 	     sp-lang="ru" class="sp-form sp-form-regular sp-form-embed" sp-show-options="{}">
