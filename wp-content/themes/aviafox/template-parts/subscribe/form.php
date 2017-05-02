@@ -4,8 +4,20 @@
 		section.subscribe
 		{
 			background-color: #f9f9f9;
-			padding: 1.5rem .5rem;
+            border-top: 2px solid rgba(153,153,153,.15);
+			padding: 0 .5em;
 		}
+        .form-outer
+        {
+			padding: 1.5em 0;
+        }
+        @media (min-width: 629px)
+        {
+            section.subscribe
+            {
+                padding: 0 1em;
+            }
+        }
 		section.subscribe h2
 		{
 			color: #33a58c;
