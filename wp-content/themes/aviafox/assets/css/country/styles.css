@@ -8,13 +8,10 @@ main.page-country .route-content ul
     margin-left: 1rem;
 }
 
-section.country-popular-destinations,
 section.country-cities-prices
 {
     background-color: #f2f2f2;
 }
-
-section.country-popular-destinations h2,
 section.country-cities-prices h2
 {
     color: #d27f3d;

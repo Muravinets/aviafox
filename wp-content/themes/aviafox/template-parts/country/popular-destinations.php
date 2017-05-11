@@ -2,7 +2,7 @@
 require_once MDLD . '/TP/Widget/PopularDestinations.php';
 
 ?>
-<section class="country-popular-destinations">
+<section class="popular-destinations">
     <h2>Популярные направления</h2>
     <ul>
         <li>

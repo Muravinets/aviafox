@@ -33,6 +33,15 @@ class SpecialOffers
      */
     private $limit = 9;
 
+	/**
+	 * Type of the layout
+	 *      brickwork - Плитка
+	 *      slider
+	 *
+	 * @var string
+	 */
+    private $widgetType = 'slider';
+
     public function render() : string
     {
     	return '<script async src="' . $this->getSrc() . '" charset="UTF-8"></script>';
@@ -44,8 +53,7 @@ class SpecialOffers
     public function getSrc() : string
     {
         $result = '//www.travelpayouts.com/ducklett/scripts.js?'
-                . 'widget_type=slider'
-//                . 'widget_type=brickwork'
+                . 'widget_type=' . $this->widgetType
                 . '&currency=rub'
                 . '&host=wl.aviafox.com%2Fflights'
                 . '&marker=65544.'
@@ -108,5 +116,12 @@ class SpecialOffers
         $this->limit = $limit;
         return $this;
     }
+
+	/**
+	 * @param string $widgetType
+	 */
+	public function setWidgetType( string $widgetType ) {
+		$this->widgetType = $widgetType;
+	}
 
 }

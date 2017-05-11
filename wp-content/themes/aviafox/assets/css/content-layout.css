@@ -105,3 +105,22 @@ main section.posts
     margin: 0;
     padding: 0;
 }
+
+/************************************************/
+/*			    Popular destinations 			*/
+/************************************************/
+section.popular-destinations
+{
+    padding-left: .5rem;
+    padding-right: .5rem;
+}
+section.popular-destinations > ul
+{
+    display: flex;
+    flex-flow: row wrap;
+}
+section.popular-destinations > ul > li
+{
+    flex: 1 0 17rem;
+    margin: .5rem .5rem 0;
+}

@@ -112,31 +112,6 @@ class Data
         return $this->data;
     }
 
-    public function loadRussians($keyName = null)
-    {
-        $this->load();
-
-        $result = [];
-        foreach ($this->data as $cityData)
-        {
-            if ($cityData->country_code !== 'RU') {
-                continue;
-            }
-
-            $city = new Object();
-            $city->importAllJSON($cityData);
-
-            if (is_null($keyName)) {
-                $result[] = $city;
-            } else {
-                $result[$city->$keyName] = $city;
-            }
-        }
-
-        $this->data = $result;
-        return $this->data;
-    }
-
     /**
      * Load data from the Data.json file
      */

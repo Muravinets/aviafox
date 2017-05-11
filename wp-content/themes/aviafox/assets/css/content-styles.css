@@ -142,3 +142,15 @@ section.posts a.more-link:hover
 {
     text-decoration: underline;
 }
+
+/************************************************/
+/*			    Popular destinations 			*/
+/************************************************/
+section.popular-destinations
+{
+    background-color: #f2f2f2;
+}
+section.popular-destinations h2
+{
+    color: #d27f3d;
+}

@@ -29,4 +29,5 @@ class Russians extends Data
 
         $this->data = $result;
     }
+
 }
