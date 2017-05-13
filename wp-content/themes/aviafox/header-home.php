@@ -33,7 +33,7 @@
 
 <script src="<?php bloginfo('template_directory') ?>/assets/js/jquery.js"></script>
 
-<?php get_template_part('template-parts/head/sf') ?>
+<?php get_template_part('template-parts/searchform/head') ?>
 
 <?php get_template_part('template-parts/head/footer') ?>
 

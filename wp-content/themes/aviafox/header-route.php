@@ -1,8 +1,11 @@
 <?php
 /* @var $route Route */
+$pageTitle = 'Найти дешевые авиабилеты по направлению ' . $route->getTitle() . ' поможет aviafox.com';
 
-$pageTitle = 'Купить авиабилеты дешево в направлении ' . $route->getTitle() . ' на сайте aviafox.com';
-$pageDescription = 'Мы поможем Вам найти самые дешевые авиабилеты в направлении ' . $route->getTitle() . '. Предложения от всех авиакомпаний.';
+$pageDescription =
+    'Aviafox.com находит самые дешевые варианты перелета по направлению ' . $route->getTitle() . '.' .
+    ' Удобный поиск находит скидки и льготные авиабилеты.'
+;
 
 ?><!DOCTYPE html>
 <html <?php language_attributes() ?>>
@@ -13,10 +16,10 @@ $pageDescription = 'Мы поможем Вам найти самые дешев�
 
 <?php get_template_part('template-parts/head/standart') ?>
 
-<link rel="stylesheet" type="text/css" href="<?php bloginfo('template_directory') ?>/assets/css/city/layout.css?v=5.0" />
-<link rel="stylesheet" type="text/css" href="<?php bloginfo('template_directory') ?>/assets/css/city/styles.css?v=5.0" />
+<link rel="stylesheet" type="text/css" href="<?php bloginfo('template_directory') ?>/assets/css/route/layout.css?v=1.0"<?= rand(0, 100000) ?> />
+<link rel="stylesheet" type="text/css" href="<?php bloginfo('template_directory') ?>/assets/css/route/styles.css?v=1.0"<?= rand(0, 100000) ?> />
 
-<?php get_template_part('template-parts/head/sf') ?>
+<?php get_template_part('template-parts/searchform/head') ?>
 <?php get_template_part('template-parts/head/footer') ?>
 
 </head>

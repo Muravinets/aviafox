@@ -124,3 +124,11 @@ section.popular-destinations > ul > li
     flex: 1 0 17rem;
     margin: .5rem .5rem 0;
 }
+
+/************************************************/
+/*			        Special offers 			    */
+/************************************************/
+section.special-offers
+{
+    padding: .5rem .33rem 1rem;
+}

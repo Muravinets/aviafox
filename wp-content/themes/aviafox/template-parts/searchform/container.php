@@ -1,8 +1,11 @@
 <?php
-require __DIR__ . '/../../../../../models/SearchForm.php';
+require_once __DIR__ . '/../../../../../models/SearchForm.php';
 
-/* @var $form SearchForm */
-$form = new SearchForm();
+if (isset($searchForm)) {
+	$form = $searchForm;
+} else {
+	$form = new SearchForm();
+}
 
 ?><div class="search-form">
     <div class="twidget-container" id="twidget-container">

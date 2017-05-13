@@ -12,7 +12,7 @@
 <link rel="stylesheet" type="text/css" href="<?php bloginfo('template_directory') ?>/assets/css/country/layout.css?v=5.0" />
 <link rel="stylesheet" type="text/css" href="<?php bloginfo('template_directory') ?>/assets/css/country/styles.css?v=5.0" />
 
-<?php get_template_part('template-parts/head/sf') ?>
+<?php get_template_part('template-parts/searchform/head') ?>
 <?php get_template_part('template-parts/head/footer') ?>
 
 <?php wp_head() ?>

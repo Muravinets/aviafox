@@ -1,0 +1,9 @@
+section.popular-destinations h2
+{
+    color: #33a58c;
+}
+section.special-offers h2,
+section.hotels h2
+{
+    color: #d27f3d;
+}
