@@ -13,7 +13,7 @@ $cities = [
 unset($cities[$route->getDeparture()->getCode()]);
 unset($cities[$route->getDestination()->getCode()]);
 
-while (count($cities) > 4) {
+while (count($cities) > 2) {
 	array_pop($cities);
 }
 

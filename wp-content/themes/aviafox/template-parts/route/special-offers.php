@@ -6,7 +6,7 @@ $widget = new TP\Widget\SpecialOffers();
 $widget
     ->setDeparture($route->getDeparture())
     ->setDestination($route->getDestination())
-    ->setLimit(7)
+    ->setLimit(4)
     ->setWidgetType('brickwork')
 ;
 
