@@ -1,7 +1,9 @@
 <?
 include 'config.php';
 /* @var $title string */
+/* @var $ogTitle string */
 /* @var $description string */
+/* @var $ogDescription string */
 
 ?><!DOCTYPE html>
 <html lang="ru-RU" prefix="og: http://ogp.me/ns#">
@@ -15,7 +17,7 @@ include 'config.php';
 	<link href="/favicon.ico" rel="icon" type="image/x-icon" />
 	<link href="/favicon.ico" rel="shortcut icon" type="image/x-icon" />
 
-	<meta property="og:title" content="<?= $title ?>"/>
+	<meta property="og:title" content="<?= $ogTitle ?>"/>
     <meta property="og:description" content="<?= $description ?>"/>
 	<meta property="og:type" content="article"/>
 	<meta property="og:url" content="https://www.aviafox.com/models/SN/test/index.php"/>
