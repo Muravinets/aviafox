@@ -10,8 +10,8 @@
 	<link href="/favicon.ico" rel="icon" type="image/x-icon" />
 	<link href="/favicon.ico" rel="shortcut icon" type="image/x-icon" />
 
-	<meta property="og:title" content="Test OG Title"/>
-	<meta property="og:description" content="Test OG Description"/>
+	<meta property="og:title" content="Web Meta Info - og:title"/>
+    <meta property="og:description" content="Проверьте, удовлетворяет ли ваш проект og:description"/>
 	<meta property="og:type" content="article"/>
 	<meta property="og:url" content="https://www.aviafox.com/models/SN/test/index.php"/>
 	<meta property="og:site_name" content="Aviafox.com"/>
