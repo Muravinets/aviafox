@@ -17,8 +17,9 @@
 	<meta property="og:site_name" content="Aviafox.com"/>
 <!--	<meta property="fb:admins" content="USER_ID"/>-->
 
-	<meta property="og:image" content="https://www.aviafox.com/web/images/logo-square.jpg"/>
-	<meta property="og:image" content="https://www.aviafox.com/web/images/logo-rectangle.jpg"/>
+    <meta property="og:image" content="https://www.aviafox.com/web/images/logo-square_256.jpg"/> <!-- для Viber -->
+    <meta property="og:image" content="https://www.aviafox.com/web/images/logo-rectangle.jpg"/>
+    <meta property="og:image" content="https://www.aviafox.com/web/images/logo-square_256.jpg"/> <!--Last. Telegram, WhatsApp-->
 
 </head>
 <body>
