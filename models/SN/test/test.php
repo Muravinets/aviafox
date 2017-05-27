@@ -24,9 +24,12 @@ include 'config.php';
 	<meta property="og:site_name" content="Aviafox.com"/>
 <!--	<meta property="fb:admins" content="USER_ID"/>-->
 
-    <meta property="og:image" content="https://www.aviafox.com/web/images/logo-square_256.jpg"/> <!-- для Viber -->
-    <meta property="og:image" content="https://www.aviafox.com/web/images/logo-rectangle.jpg"/>
-    <meta property="og:image" content="https://www.aviafox.com/web/images/logo-square_256.jpg"/> <!--Last. Telegram, WhatsApp-->
+	<? $logoName = isset($_GET['logo_name']) ? $_GET['logo_name'] : 'logo-bg.jpg' ?>
+    <meta property="og:image" content="https://www.aviafox.com/web/images/<?= $logoName ?>"/>
+
+<!--    <meta property="og:image" content="https://www.aviafox.com/web/images/logo-square_256.jpg"/> <!-- для Viber -->-->
+<!--    <meta property="og:image" content="https://www.aviafox.com/web/images/logo-rectangle.jpg"/>-->
+<!--    <meta property="og:image" content="https://www.aviafox.com/web/images/logo-square_256.jpg"/> <!--Last. Telegram, WhatsApp-->-->
 
 </head>
 <body>
