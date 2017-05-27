@@ -17,7 +17,8 @@
 	<meta property="og:site_name" content="Aviafox.com"/>
 <!--	<meta property="fb:admins" content="USER_ID"/>-->
 
-    <meta property="og:image" content="https://www.aviafox.com/web/images/logo-rectangle.jpg"/>
+    <? $logoName = isset($_GET['logo_name']) ? $_GET['logo_name'] : 'logo-rectangle.jpg' ?>
+    <meta property="og:image" content="https://www.aviafox.com/web/images/<?= $logoName ?>"/>
 
 </head>
 <body>
