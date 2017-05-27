@@ -22,6 +22,7 @@ $pageDescription =
 <?php get_template_part('template-parts/searchform/head') ?>
 <?php get_template_part('template-parts/head/footer') ?>
 
+<?php wp_head() ?>
 </head>
 
 <body>
