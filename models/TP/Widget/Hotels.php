@@ -20,7 +20,8 @@ class Hotels
      * WL
      * @var string
      */
-    private $host = 'wl.aviafox.com%2Fhotels';
+    private $host = 'search.hotellook.com';
+//    private $host = 'wl.aviafox.com%2Fhotels';
 
 	/**
 	 * @var int
