@@ -20,6 +20,26 @@ if (isset($searchForm)) {
                     <li id="twidget-hotel-li">
                         <a href="#twidget-tab2"><i class="fa fa-hotel"></i>Отели</a>
                     </li>
+                    <li id="twidget-insurance-li">
+                        <a target="_blank"
+                           href="http://c24.travelpayouts.com/click?shmarker=65544&promo_id=519&source_type=link&type=click"
+                            >Страховка</a>
+                    </li>
+                    <li id="twidget-rentacar-li">
+                        <a target="_blank"
+                           href="http://c13.travelpayouts.com/click?shmarker=65544&promo_id=153&source_type=link&type=click"
+                            >Авто</a>
+                    </li>
+                    <li id="twidget-rentacar-li">
+                        <a target="_blank"
+                           href="http://c26.travelpayouts.com/click?shmarker=65544&promo_id=554&source_type=link&type=click"
+                            >Туры</a>
+                    </li>
+                    <li id="twidget-rentacar-li">
+                        <a target="_blank"
+                           href="http://c14.travelpayouts.com/click?shmarker=65544&promo_id=199&source_type=link&type=click"
+                            >Экскурсии</a>
+                    </li>
                 </ul>
             </nav>
             <!-- tabs -->
