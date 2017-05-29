@@ -11,42 +11,42 @@ img {
 /************************************************/
 /*			 		Header 	 					*/
 /************************************************/
-body > header
+header.site-header
 {
 	width: 100%;
 }
 
-body > header > section.top-bar
+header.site-header > section.top-bar
 {
 	position: relative;
 	padding: 1rem 0;
 }
 
-body > header h1
+header.site-header h1
 {
 	margin: 0;
 }
 
-body > header h1,
-body > header .logo
+header.site-header h1,
+header.site-header .logo
 {
 	width: 100%;
 	text-align: center;
 	z-index: 2;
 }
 
-body > header .logo img
+header.site-header .logo img
 {
 	width: 25%;
 }
 
-body > .bg-image
+.bg-image
 {
 	position: absolute;
 	top: 0;
 }
 
-body > .bg-image img 
+.bg-image img
 {
     display: block;
     width: 100%;
@@ -63,7 +63,7 @@ body > .bg-image img
 /************************************************/
 /*			 		Footer 	 					*/
 /************************************************/
-body > footer
+footer
 {
     padding: 2rem;
 	position: relative;
