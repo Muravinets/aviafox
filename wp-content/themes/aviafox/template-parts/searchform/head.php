@@ -1,8 +1,11 @@
-<!--SF css files-->
+<?
+$styleVersion = $_SERVER['HTTP_HOST'] == 'wp.aviafox.local' ? '?v=' . time() : '';
+
+?><!--SF css files-->
 <link rel="stylesheet prefetch" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.6.0/css/bootstrap-datepicker3.standalone.css" />
-<link rel="stylesheet" type="text/css" href="<?php bloginfo('template_directory') ?>/assets/css/search-form/layout.css?v=3.9" />
-<link rel="stylesheet" type="text/css" href="<?php bloginfo('template_directory') ?>/assets/css/search-form/style.css?v=3.1" />
-<link rel="stylesheet" type="text/css" href="<?php bloginfo('template_directory') ?>/assets/css/search-form/datepicker.css?v=2" />
+<link rel="stylesheet" type="text/css" href="<?php bloginfo('template_directory') ?>/assets/css/search-form/layout.css<?= $styleVersion ?>" />
+<link rel="stylesheet" type="text/css" href="<?php bloginfo('template_directory') ?>/assets/css/search-form/style.css<?= $styleVersion ?>" />
+<link rel="stylesheet" type="text/css" href="<?php bloginfo('template_directory') ?>/assets/css/search-form/datepicker.css<?= $styleVersion ?>" />
 
 <!--SF js files-->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-dateFormat/1.0/jquery.dateFormat.js"></script>

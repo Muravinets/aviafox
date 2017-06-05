@@ -63,6 +63,19 @@
 	line-height: 2rem;
 }
 
+/* Tabs titles and icons */
+@media (max-width: 906px)
+{
+    .search-form .twidget-tab-links li span
+    {
+        display: none;
+    }
+    .twidget-tab-links ul li a i
+    {
+        margin-right: 0;
+    }
+}
+
 /* tab content */
 .twidget-tab-content 
 {
