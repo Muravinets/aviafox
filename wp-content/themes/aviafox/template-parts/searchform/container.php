@@ -23,7 +23,7 @@ if (isset($searchForm)) {
                     <li id="twidget-insurance-li">
                         <a target="_blank"
                            href="http://c24.travelpayouts.com/click?shmarker=65544&promo_id=519&source_type=link&type=click"
-                            ><i class="fa fa-i-insurance-hh"></i><span>Страховка</span></a>
+                            ><i class="fa fa-i-insurance"></i><span>Страховка</span></a>
                     </li>
                     <li id="twidget-rentacar-li">
                         <a target="_blank"
@@ -39,6 +39,12 @@ if (isset($searchForm)) {
                         <a target="_blank"
                            href="http://c14.travelpayouts.com/click?shmarker=65544&promo_id=199&source_type=link&type=click"
                             ><i class="fa fa-i-travel-23-512"></i><span>Экскурсии</span></a>
+                    </li>
+                    <li id="twidget-excursions-li">
+                        <a target="_blank"
+                           href="http://c1.travelpayouts.com/click?shmarker=65544&promo_id=647&source_type=customlink&type=click&custom_url=https%3A%2F%2Fkiwitaxi.ru"
+                           title="Автомобильные трансферы по всему миру"
+                            ><i class="fa fa-i-taxi"></i><span>Трансферы</span></a>
                     </li>
                 </ul>
             </nav>

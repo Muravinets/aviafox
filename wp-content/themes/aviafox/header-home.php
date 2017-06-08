@@ -30,7 +30,6 @@
 <link rel="stylesheet" type="text/css" href="<?php bloginfo('template_directory') ?>/assets/css/styles.css?v=5.7" media="all" />
 
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" />
-<link rel="stylesheet" href="<?php bloginfo('template_directory') ?>/assets/css/fonticons.css" />
 
 <script src="<?php bloginfo('template_directory') ?>/assets/js/jquery.js"></script>
 
