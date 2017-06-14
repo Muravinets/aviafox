@@ -17,21 +17,13 @@ while (count($cities) > 2) {
 	array_pop($cities);
 }
 
-require_once MDLD . '/TP/Widget/PopularDestinations.php';
-?>
-<section class="popular-destinations">
-	<h2>Популярные направления</h2>
-	<ul>
-		<li>
-			<?php echo (new TP\Widget\PopularDestinations($route->getDeparture()->getCode()))->render() ?>
-		</li>
-		<li>
-			<?php echo (new TP\Widget\PopularDestinations($route->getDestination()->getCode()))->render() ?>
-		</li>
-        <? foreach ($cities as $cityCode) : ?>
-		<li>
-			<?php echo (new TP\Widget\PopularDestinations($cityCode))->render() ?>
-		</li>
-        <? endforeach ?>
-	</ul>
-</section>
+$cities = [
+    $route->getDeparture()->getCode(),
+	$route->getDestination()->getCode(),
+] + $cities;
+
+/* @var $wp_query WP_Query */
+$wp_query->query_vars['popularDestinationsCities'] = $cities;
+$wp_query->query_vars['popularDestinationsTitle'] = 'Популярные направления';
+
+get_template_part('template-parts/popular-destinations');

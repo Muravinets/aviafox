@@ -5,6 +5,9 @@ get_header('home');
 ?>
 
 <main>
+
+	<?php get_template_part('template-parts/home/popular-destinations') ?>
+
     <section class="recomendations">
         <h2>Чтобы найти самые дешевые авиабилеты, Вам нужно:</h2>
         <div class="row">

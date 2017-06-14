@@ -9,7 +9,6 @@ section.intro > section
 }
 @media (min-width: 400px)
 {
-    section.intro > section.popular-destinations,
     section.intro > section.city-content
     {
         padding: .5rem;
@@ -22,11 +21,6 @@ section.intro > section
     {
         display: flex;
         flex-flow: row wrap;
-    }
-    section.intro > section.popular-destinations
-    {
-        flex: 1 0 17rem;
-        flex: 1 1 auto;
     }
     section.intro > section.city-content
     {
