@@ -48,7 +48,7 @@
 {
 	box-sizing: content-box;
 	display: inline-block;
-	padding: .3rem .6rem;
+	padding: .3rem .32rem;
 	position: relative;
 }
 
@@ -64,13 +64,6 @@
 }
 
 /* Tabs titles and icons */
-@media (max-width: 375px)
-{
-	.twidget-tab-links ul li
-	{
-		padding: .3rem .37rem;
-	}
-}
 @media (max-width: 907px)
 {
     .search-form .twidget-tab-links li span
