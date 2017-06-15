@@ -12,6 +12,8 @@
  * @version 1.0
  */
 
+$styleVersion = '?v=' . ($_SERVER['HTTP_HOST'] == 'wp.aviafox.local' ? time() : '5.8');
+
 ?><!DOCTYPE html>
 <html <?php language_attributes() ?>>
 <head>
@@ -26,8 +28,8 @@
 <link href="/favicon.ico" rel="shortcut icon" type="image/x-icon" />
 
 <link rel="stylesheet" type="text/css" href="<?php bloginfo('template_directory') ?>/assets/css/normalize.css" media="all" />
-<link rel="stylesheet" type="text/css" href="<?php bloginfo('template_directory') ?>/assets/css/layout.css?v=5.7" media="all" />
-<link rel="stylesheet" type="text/css" href="<?php bloginfo('template_directory') ?>/assets/css/styles.css?v=5.7" media="all" />
+<link rel="stylesheet" type="text/css" href="<?php bloginfo('template_directory') ?>/assets/css/layout.css<?= $styleVersion ?>" media="all" />
+<link rel="stylesheet" type="text/css" href="<?php bloginfo('template_directory') ?>/assets/css/styles.css<?= $styleVersion ?>" media="all" />
 
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" />
 

@@ -105,20 +105,20 @@ body > header .image img
 }
 
 /************************************************/
-/*			 		Main 	 					*/
+/*			 		Recommendations				*/
 /************************************************/
-.recomendations 
+.recommendations
 {
 	padding-bottom: 2rem;
 }
 
-.recomendations h2 
+.recommendations h2
 {
 	padding: 1rem 0;
 	margin: 0;
 }
 
-.recomendations .row 
+.recommendations .row
 {
 	display: -webkit-flex; /* Safari */
 	display: flex; /* отображает контейнер как блочный элемент */
@@ -135,20 +135,20 @@ body > header .image img
 	padding: 0 2rem;
 }
 
-.recomendations .row > div 
+.recommendations .row > div
 {
 	-webkit-flex: auto; 
 	-ms-flex: auto; 
 	flex: auto;
 }
-.recomendations .flex-item 
+.recommendations .flex-item
 {
 	width: 100%;
 }
 
 @media (min-width: 768px) 
 {
-	.recomendations .row 
+	.recommendations .row
 	{
 		display: -webkit-flex; /* Safari */
 		display: flex; /* отображает контейнер как блочный элемент */
@@ -163,7 +163,7 @@ body > header .image img
 		flex-flow: row nowrap;
 	}
 	
-	.recomendations .row > div 
+	.recommendations .row > div
 	{
 		-webkit-flex: auto; 
 		-ms-flex: auto; 
