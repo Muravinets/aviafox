@@ -4,7 +4,7 @@
 		section.subscribe
 		{
 			background-color: #f9f9f9;
-            border-top: 2px solid rgba(153,153,153,.15);
+            border-top: 1px solid rgba(153,153,153,.15);
             border-bottom: 1px solid rgba(153,153,153,.15);
 			padding: 0 .5em;
 		}
@@ -23,7 +23,8 @@
 		{
 			color: #33a58c;
 			color: #d27f3d;
-			font-size: 1.4rem;
+			font-size: 1.4em;
+			font-size: 1.23em;
 			font-weight: 300;
 			line-height: 1.5;
 			text-align: center;

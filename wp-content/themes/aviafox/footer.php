@@ -1,12 +1,10 @@
 <footer>
 	<?php
 	require_once MDLD . '/SN/View/Widget.php';
-
 	$widget = new \SN\View\Widget;
-	if (is_front_page()) :
-		$widget->setTitle('Понравился сервис? Расскажи о нас друзьям.');
+	if (!is_front_page()) :
+	    $widget->render();
 	endif;
-	$widget->render();
 	?>
 
     <section class="footer-links">

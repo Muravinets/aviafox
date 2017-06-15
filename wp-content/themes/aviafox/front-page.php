@@ -6,7 +6,9 @@ get_header('home');
 
 <main>
 
-	<?php get_template_part('template-parts/home/popular-destinations') ?>
+    <? get_template_part('template-parts/home/popular-destinations') ?>
+    <? get_template_part('template-parts/sn/widget') ?>
+	<? get_template_part('template-parts/subscribe/form') ?>
 
     <section class="recomendations">
         <h2>Чтобы найти самые дешевые авиабилеты, Вам нужно:</h2>
@@ -32,11 +34,9 @@ get_header('home');
         </div>
     </section>
 
-	<?php get_template_part('template-parts/home/content') ?>
+	<? get_template_part('template-parts/home/content') ?>
 
-	<?php get_template_part('template-parts/subscribe/form') ?>
-
-	<?php get_template_part('template-parts/home/avia', 'partners') ?>
+	<? get_template_part('template-parts/home/avia', 'partners') ?>
 </main>
 
-<?php get_footer();
+<? get_footer();

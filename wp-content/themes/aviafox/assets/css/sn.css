@@ -1,0 +1,40 @@
+/************************************/
+/*			    Layout 		    	*/
+/************************************/
+main .sn
+{
+    padding: 1.7em 1em;
+    text-align: center;
+}
+
+main .sn h2
+{
+    margin: 0 0 .37em 0;
+    padding: 0;
+}
+
+main .sn .ya-share2__container_size_m .ya-share2__item {
+    margin: 5px 3px;
+}
+
+main .sn .ya-share2__container_size_m .ya-share2__icon {
+    height: 2.3em;
+    width: 2.3em;
+    background-size: 2.3em 2.3em;
+}
+
+/************************************/
+/*			    Style 		    	*/
+/************************************/
+main .sn
+{
+    background-color: white;
+}
+main .sn h2
+{
+    color: #33a58c;
+
+    font-size: 1.17rem;
+    font-weight: 300;
+    font-style: italic;
+}
