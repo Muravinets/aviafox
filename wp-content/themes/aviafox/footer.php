@@ -1,3 +1,4 @@
+<?php get_template_part('template-parts/head/footer') ?>
 <footer>
 	<?php
 	require_once MDLD . '/SN/View/Widget.php';
@@ -30,6 +31,7 @@
         <div class="footer-description">Поиск и бронирование дешёвых авиабилетов и отелей</div>
     </section>
 </footer>
+
 <?php wp_footer() ?>
 
 </body>

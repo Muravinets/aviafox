@@ -23,7 +23,6 @@
     <link rel="stylesheet" type="text/css" href="<?php bloginfo('template_directory') ?>/assets/css/page-catalog.css?v=1.0">
 
 	<?php get_template_part('template-parts/searchform/head') ?>
-	<?php get_template_part('template-parts/head/footer') ?>
 
 	<?php wp_head() ?>
 </head>

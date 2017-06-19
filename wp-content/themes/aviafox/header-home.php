@@ -46,8 +46,6 @@ $headerType = isset($_GET['ht']) ? $_GET['ht'] : null;
 
 <?php get_template_part('template-parts/searchform/head') ?>
 
-<?php get_template_part('template-parts/head/footer') ?>
-
 <?php wp_head() ?>
 </head>
 

@@ -7,7 +7,6 @@ $wp_query->query_vars['noSearchForm'] = true;
     <title></title>
 
     <?php get_template_part('template-parts/head/standart') ?>
-    <?php get_template_part('template-parts/head/footer') ?>
 
     <?php wp_head() ?>
 </head>

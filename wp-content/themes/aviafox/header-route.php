@@ -22,7 +22,6 @@ $pageDescription =
 <link rel="stylesheet" type="text/css" href="<?php bloginfo('template_directory') ?>/assets/css/route/styles.css"<?= $styleVersion ?> />
 
 <?php get_template_part('template-parts/searchform/head') ?>
-<?php get_template_part('template-parts/head/footer') ?>
 
 <?php wp_head() ?>
 </head>

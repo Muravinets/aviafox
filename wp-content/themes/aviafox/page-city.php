@@ -15,6 +15,7 @@ $cityName = $linkParts[count($linkParts) - 1];
 $object = $data->findUri($cityName);
 $object->loadData();
 
+/* @var $wp_query WP_Query */
 $wp_query->query_vars['city'] = $object;
 
 $H1 = 'Дешевые авиабилеты. Город ' . $object->getTitle() . '.';

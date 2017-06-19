@@ -13,7 +13,6 @@
 <link rel="stylesheet" type="text/css" href="<?php bloginfo('template_directory') ?>/assets/css/country/styles.css?v=5.0" />
 
 <?php get_template_part('template-parts/searchform/head') ?>
-<?php get_template_part('template-parts/head/footer') ?>
 
 <?php wp_head() ?>
 </head>
