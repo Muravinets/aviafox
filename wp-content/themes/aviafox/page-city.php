@@ -17,6 +17,9 @@ $object->loadData();
 
 /* @var $wp_query WP_Query */
 $wp_query->query_vars['city'] = $object;
+$wp_query->query_vars['pageTitle'] = 'Купить авиабилеты дешево в город ' . $object->getTitle() . ' на сайте aviafox.com';
+$wp_query->query_vars['pageDescription'] = 'Мы поможем Вам найти самые дешевые авиабилеты в город ' . $object->getTitle()
+                                         . '. Предложения от всех авиакомпаний.';
 
 $H1 = 'Дешевые авиабилеты. Город ' . $object->getTitle() . '.';
 

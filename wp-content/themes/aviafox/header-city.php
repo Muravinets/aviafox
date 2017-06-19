@@ -1,22 +1,23 @@
 <?php
 /* @var $city \City\Object */
-$pageTitle = 'Купить авиабилеты дешево в город ' . $city->getTitle() . ' на сайте aviafox.com';
-$pageDescription = 'Мы поможем Вам найти самые дешевые авиабилеты в город ' . $city->getTitle() . '. Предложения от всех авиакомпаний.';
+/* @var $pageTitle string */
+/* @var $pageDescription string */
 
 ?><!DOCTYPE html>
 <html <?php language_attributes() ?>>
 <head>
 
-<title><?php echo $pageTitle ?></title>
-<meta name="description" content="<?php echo $pageDescription ?>" />
+<title><?= isset($pageTitle) ? $pageTitle : '' ?></title>
+<meta name="description" content="<?= isset($pageDescription) ? $pageDescription : '' ?>" />
 
 <?php get_template_part('template-parts/head/standart') ?>
+<?php get_template_part('template-parts/searchform/head') ?>
 
 <link rel="stylesheet" type="text/css" href="<?php bloginfo('template_directory') ?>/assets/css/city/layout.css?v=5.0" />
 <link rel="stylesheet" type="text/css" href="<?php bloginfo('template_directory') ?>/assets/css/city/styles.css?v=5.0" />
 
-<?php get_template_part('template-parts/searchform/head') ?>
 
+<?php wp_head() ?>
 </head>
 
 <body>
