@@ -12,7 +12,8 @@
  * @version 1.0
  */
 
-$styleVersion = '?v=' . ($_SERVER['HTTP_HOST'] == 'wp.aviafox.local' ? time() : '5.8');
+$styleVersion = '?v=' . ($_SERVER['HTTP_HOST'] == 'wp.aviafox.local' ? time() : '5.9');
+$headerType = isset($_GET['ht']) ? $_GET['ht'] : null;
 
 ?><!DOCTYPE html>
 <html <?php language_attributes() ?>>
@@ -31,6 +32,14 @@ $styleVersion = '?v=' . ($_SERVER['HTTP_HOST'] == 'wp.aviafox.local' ? time() : 
 <link rel="stylesheet" type="text/css" href="<?php bloginfo('template_directory') ?>/assets/css/layout.css<?= $styleVersion ?>" media="all" />
 <link rel="stylesheet" type="text/css" href="<?php bloginfo('template_directory') ?>/assets/css/styles.css<?= $styleVersion ?>" media="all" />
 
+<? if ($headerType == 'old') { ?>
+    <link rel="stylesheet" type="text/css" href="<?php bloginfo('template_directory') ?>/assets/css/header/old_layout.css<?= $styleVersion ?>" media="all" />
+    <link rel="stylesheet" type="text/css" href="<?php bloginfo('template_directory') ?>/assets/css/header/old_styles.css<?= $styleVersion ?>" media="all" />
+<? } else { ?>
+    <link rel="stylesheet" type="text/css" href="<?php bloginfo('template_directory') ?>/assets/css/header/layout.css<?= $styleVersion ?>" media="all" />
+    <link rel="stylesheet" type="text/css" href="<?php bloginfo('template_directory') ?>/assets/css/header/styles.css<?= $styleVersion ?>" media="all" />
+<? } ?>
+
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" />
 
 <script src="<?php bloginfo('template_directory') ?>/assets/js/jquery.js"></script>
@@ -43,13 +52,17 @@ $styleVersion = '?v=' . ($_SERVER['HTTP_HOST'] == 'wp.aviafox.local' ? time() : 
 </head>
 
 <body>
-<?php get_template_part('template-parts/counter/all') ?>
 
-<header>
-    <section class="top-bar">
-        <h1>Поисковик авиабилетов</h1>
-	    <?php get_template_part('template-parts/header/logo') ?>
-	    <?php get_template_part('template-parts/header/image') ?>
-    </section>
-	<?php get_template_part('template-parts/searchform/container') ?>
-</header>
+<? if ($headerType == 'old') : ?>
+    <?php get_template_part('template-parts/counter/all') ?>
+    <header>
+        <section class="top-bar">
+            <h1>Поисковик авиабилетов</h1>
+            <?php get_template_part('template-parts/header/logo') ?>
+            <?php get_template_part('template-parts/header/image') ?>
+        </section>
+        <?php get_template_part('template-parts/searchform/container') ?>
+    </header>
+<? else : ?>
+	<?php get_template_part('template-parts/header/standart') ?>
+<? endif;
