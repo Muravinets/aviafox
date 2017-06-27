@@ -1,4 +1,8 @@
-<?php get_template_part('template-parts/head/footer') ?>
+<?
+$styleVersion = '?v=' . ($_SERVER['HTTP_HOST'] == 'wp.aviafox.local' ? time() : '5.9');
+?>
+<link href="<?php bloginfo('template_directory') ?>/assets/css/footer/layout.css<?= $styleVersion ?>" media="all" rel="stylesheet" type="text/css"/>
+<link href="<?php bloginfo('template_directory') ?>/assets/css/footer/styles.css<?= $styleVersion ?>" media="all" rel="stylesheet" type="text/css"/>
 <footer>
 	<?php
 	require_once MDLD . '/SN/View/Widget.php';
@@ -33,6 +37,23 @@
 </footer>
 
 <?php wp_footer() ?>
+
+<!-- Begin Me-Talk -->
+<script type='text/javascript'>
+    (function(d, w, m) {
+        window.supportAPIMethod = m;
+        var s = d.createElement('script');
+        s.type ='text/javascript'; s.id = 'supportScript'; s.charset = 'utf-8';
+        s.async = true;
+        var id = '46595fd0e91a69890a344eecd9f71465';
+        s.src = '//me-talk.ru/support/support.js?h='+id;
+        var sc = d.getElementsByTagName('script')[0];
+        w[m] = w[m] || function() { (w[m].q = w[m].q || []).push(arguments); };
+        if (sc) sc.parentNode.insertBefore(s, sc);
+        else d.documentElement.firstChild.appendChild(s);
+    })(document, window, 'MeTalk');
+</script>
+<!-- End Me-Talk -->
 
 </body>
 </html>

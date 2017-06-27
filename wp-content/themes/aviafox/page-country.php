@@ -2,7 +2,7 @@
 /*
 Template Name: Country
 */
-
+/* @var $wp_query WP_Query */
 define('MDLD', __DIR__ . '/../../../models');
 
 require_once MDLD . '/Country/Data.php';
@@ -20,7 +20,12 @@ $wp_query->query_vars['object'] = $object;
 
 $H1 = 'Купить билет на самолет в ' . $object->getTitleDestination();
 
-get_header('country');
+add_action('wp_head', function(){ ?>
+    <link rel="stylesheet" type="text/css" href="<?php bloginfo('template_directory') ?>/assets/css/country/layout.css?v=5.0" />
+    <link rel="stylesheet" type="text/css" href="<?php bloginfo('template_directory') ?>/assets/css/country/styles.css?v=5.0" />
+<? });
+
+get_header('base');
 ?>
 <main class="page-country">
     <h1><?php echo $H1 ?></h1>

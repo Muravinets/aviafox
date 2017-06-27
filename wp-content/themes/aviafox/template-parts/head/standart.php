@@ -1,4 +1,10 @@
 <?
+/**
+ * Used in:
+ *  header-base
+ *  
+ */
+
 $styleVersion = '?v=' . ($_SERVER['HTTP_HOST'] == 'wp.aviafox.local' ? time() : '5.9');
 
 ?><meta charset="<?php bloginfo( 'charset' ) ?>">

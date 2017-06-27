@@ -8,4 +8,6 @@
 	</section>
 </header>
 
-<?php if (!isset($noSearchForm)) : get_template_part('template-parts/searchform/container'); endif; ?>
+<? if (!isset($noSearchForm)) :
+    get_template_part('template-parts/searchform/container');
+endif;

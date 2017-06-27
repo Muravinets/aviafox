@@ -2,7 +2,10 @@
 
 define('MDLD', __DIR__ . '/../../../models');
 
-get_header('page');
+/* @var $wp_query WP_Query */
+$wp_query->query_vars['noSearchForm'] = true;
+
+get_header('base');
 ?>
 <main>
     <h1><?php the_title() ?></h1>

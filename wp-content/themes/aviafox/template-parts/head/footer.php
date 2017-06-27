@@ -1,2 +1,0 @@
-<link rel="stylesheet" type="text/css" href="<?php bloginfo('template_directory') ?>/assets/css/footer/layout.css?v=3.1" media="all" />
-<link rel="stylesheet" type="text/css" href="<?php bloginfo('template_directory') ?>/assets/css/footer/styles.css?v=3.3.3" media="all" />

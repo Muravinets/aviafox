@@ -2,7 +2,7 @@
 /*
 Template Name: City
 */
-
+/* @var $wp_query WP_Query */
 define('MDLD', __DIR__ . '/../../../models');
 
 require_once MDLD . '/City/Data/Russians.php';
@@ -15,7 +15,6 @@ $cityName = $linkParts[count($linkParts) - 1];
 $object = $data->findUri($cityName);
 $object->loadData();
 
-/* @var $wp_query WP_Query */
 $wp_query->query_vars['city'] = $object;
 $wp_query->query_vars['pageTitle'] = 'Купить авиабилеты дешево в город ' . $object->getTitle() . ' на сайте aviafox.com';
 $wp_query->query_vars['pageDescription'] = 'Мы поможем Вам найти самые дешевые авиабилеты в город ' . $object->getTitle()
@@ -23,7 +22,12 @@ $wp_query->query_vars['pageDescription'] = 'Мы поможем Вам найт�
 
 $H1 = 'Дешевые авиабилеты. Город ' . $object->getTitle() . '.';
 
-get_header('city');
+add_action('wp_head', function(){ ?>
+    <link rel="stylesheet" type="text/css" href="<?php bloginfo('template_directory') ?>/assets/css/city/layout.css?v=5.0" />
+    <link rel="stylesheet" type="text/css" href="<?php bloginfo('template_directory') ?>/assets/css/city/styles.css?v=5.0" />
+<? });
+
+get_header('base');
 ?>
 <main class="city-page">
     <h1><?php echo $H1 ?></h1>

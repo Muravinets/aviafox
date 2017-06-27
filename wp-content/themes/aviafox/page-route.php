@@ -2,7 +2,7 @@
 /*
 Template Name: Route
 */
-
+/* @var $wp_query WP_Query */
 define('MDLD', __DIR__ . '/../../../models');
 
 require_once MDLD . '/City/Data.php';
@@ -31,9 +31,21 @@ $searchForm
 ;
 $wp_query->query_vars['searchForm'] = $searchForm;
 
+$wp_query->query_vars['pageTitle'] =
+    'Найти дешевые авиабилеты по направлению ' . $route->getTitle() . ' поможет aviafox.com';
+$wp_query->query_vars['pageDescription'] =
+	'Aviafox.com находит самые дешевые варианты перелета по направлению ' . $route->getTitle() . '.' .
+	' Удобный поиск находит скидки и льготные авиабилеты.'
+;
+
 $H1 = 'Направление ' . $route->getTitle();
 
-get_header('route');
+add_action('wp_head', function(){ ?>
+    <link rel="stylesheet" type="text/css" href="<?php bloginfo('template_directory') ?>/assets/css/route/layout.css?v=5.0" />
+    <link rel="stylesheet" type="text/css" href="<?php bloginfo('template_directory') ?>/assets/css/route/styles.css?v=5.0" />
+<? });
+
+get_header('base');
 ?>
 <main class="route-page">
     <h1><?php echo $H1 ?></h1>
