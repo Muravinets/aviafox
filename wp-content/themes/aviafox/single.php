@@ -10,7 +10,8 @@
  * @version 1.0
  */
 
-define('MDLD', __DIR__ . '/../../../models');
+require 'app.php';
+
 get_header(); ?>
 
 <main class="blog-post city-page">

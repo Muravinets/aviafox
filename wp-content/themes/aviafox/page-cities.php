@@ -3,7 +3,7 @@
 Template Name: Cities
 */
 
-define('MDLD', __DIR__ . '/../../../models');
+require 'app.php';
 
 require_once MDLD . '/City/Data/Russians.php';
 $data = new City\Data\Russians();

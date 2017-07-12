@@ -3,7 +3,8 @@
 Template Name: Country
 */
 /* @var $wp_query WP_Query */
-define('MDLD', __DIR__ . '/../../../models');
+
+require 'app.php';
 
 require_once MDLD . '/Country/Data.php';
 

@@ -1,6 +1,9 @@
 <?php
 namespace TP\Widget;
 
+require_once MDLD . '/TP/Service.php';
+
+use \TP;
 
 /**
  * Class SpecialOffers
@@ -56,7 +59,7 @@ class SpecialOffers
                 . 'widget_type=' . $this->widgetType
                 . '&currency=rub'
                 . '&host=wl.aviafox.com%2Fflights'
-                . '&marker=65544.'
+                . '&marker=' . TP\Service::getMarker()
                 . '&limit=' . $this->limit;
         ;
 

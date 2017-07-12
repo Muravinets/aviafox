@@ -1,6 +1,6 @@
 <?php
 
-define('MDLD', __DIR__ . '/../../../models');
+require 'app.php';
 
 /* @var $wp_query WP_Query */
 $wp_query->query_vars['noSearchForm'] = true;

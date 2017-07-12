@@ -1,5 +1,5 @@
 <?php
-define('MDLD', __DIR__ . '/../../../models');
+require 'app.php';
 
 get_header('home');
 ?>

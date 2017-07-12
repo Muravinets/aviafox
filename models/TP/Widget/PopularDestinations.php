@@ -1,6 +1,9 @@
 <?php
 namespace TP\Widget;
 
+require_once MDLD . '/TP/Service.php';
+
+use \TP;
 
 class PopularDestinations
 {
@@ -9,12 +12,6 @@ class PopularDestinations
      * @var string
      */
     private $destinationCode;
-
-    /**
-     * Travelpayouts affiliate marker
-     * @var string
-     */
-    private $marker = '65544';
 
     /**
      * WL
@@ -43,7 +40,7 @@ class PopularDestinations
     public function getSrc() : string
     {
         $src = '//www.travelpayouts.com/weedle/widget.js?'
-             . 'marker=' . $this->marker
+             . 'marker=' . TP\Service::getMarker()
              . '&host=' . $this->host
              . '&locale=ru&currency=rub'
              . '&destination=' . strtoupper($this->destinationCode)

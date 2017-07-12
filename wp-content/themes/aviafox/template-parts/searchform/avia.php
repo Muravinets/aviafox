@@ -1,4 +1,7 @@
-<!--flight tab content-->
+<?php
+/* @var $form SearchForm */
+
+?><!--flight tab content-->
 <div id="twidget-tab1" class="twidget-tab active">
     <div class="clearfix"></div>
     <form action="https://wl.aviafox.com/flights" method="get" autocomplete="off" target="_blank">
@@ -102,7 +105,7 @@
                 <!-- end passenger selection-->
             </li>
             <!-- partner marker -->
-            <input type="hidden" name="marker" value="65544">
+            <input type="hidden" name="marker" value="<?= $form->getMarker() ?>">
             <!-- with_request flag -->
             <input type="hidden" name="with_request" value="1">
             <!-- submit button -->

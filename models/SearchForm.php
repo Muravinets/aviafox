@@ -13,7 +13,7 @@ class SearchForm
 //  'http://hydra.aviasales.ru/searches/new'
 
     private $locale = 'ru';
-    private $marker = '65544';
+    private $marker;
 
     private $originCode;
     private $destinationCode;
@@ -70,6 +70,10 @@ class SearchForm
      */
     public function getMarker()
     {
+    	if (is_null($this->marker)) {
+    		require_once MDLD . '/TP/Service.php';
+		    $this->marker = TP\Service::getMarker();
+	    }
         return $this->marker;
     }
 

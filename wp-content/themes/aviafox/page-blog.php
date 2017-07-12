@@ -2,6 +2,8 @@
 /*
     Template Name: Blog
 */
+require 'app.php';
+
 echo 'Hello blog';
 ?>
 <?php get_header(); ?>

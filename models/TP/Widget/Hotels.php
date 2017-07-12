@@ -1,6 +1,9 @@
 <?php
 namespace TP\Widget;
 
+require_once MDLD . '/TP/Service.php';
+
+use \TP;
 
 class Hotels
 {
@@ -9,12 +12,6 @@ class Hotels
      * @var string
      */
     private $cityCode;
-
-    /**
-     * Travelpayouts affiliate marker
-     * @var string
-     */
-    private $marker = '65544.';
 
     /**
      * WL
@@ -54,7 +51,7 @@ class Hotels
 	           . '&type=compact'
 	           . '&currency=rub'
 	           . '&host=' . $this->host
-	           . '&marker=' . $this->marker
+	           . '&marker=' . TP\Service::getMarker()
 	           . '&limit=' . $this->limit
 	    ;
 

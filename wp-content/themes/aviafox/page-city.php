@@ -3,7 +3,8 @@
 Template Name: City
 */
 /* @var $wp_query WP_Query */
-define('MDLD', __DIR__ . '/../../../models');
+
+require 'app.php';
 
 require_once MDLD . '/City/Data/Russians.php';
 $data = new City\Data\Russians();
@@ -49,7 +50,11 @@ get_header('base');
 
     <section class="city-hotels-map">
         <h2>Карта отелей <?php echo $object->titleFrom ?></h2>
-        <iframe src="//maps.avs.io/hotels?color=%2300b1dd&locale=ru&marker=65544.hotelsmap&changeflag=0&draggable=true&map_styled=false&map_color=%2300b1dd&contrast_color=%23FFFFFF&disable_zoom=false&base_diameter=16&scrollwheel=false&host=hotellook.ru&zoom=12&city_iata=<?php echo $object->getCode() ?>" height="400px" width="100%"  scrolling="no" frameborder="0"></iframe>
+        <?php
+        require_once MDLD . '/TP/Widget/HotelsMap.php';
+        $widget = new TP\Widget\HotelsMap($object->getCode());
+        echo $widget->render();
+        ?>
     </section>
 
 </main>

@@ -15,7 +15,7 @@
  * @version 1.0
  */
 
-define('MDLD', __DIR__ . '/../../../models');
+require 'app.php';
 //echo 'Hello Index';
 
 get_header(); ?>

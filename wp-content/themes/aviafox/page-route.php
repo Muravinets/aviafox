@@ -3,7 +3,8 @@
 Template Name: Route
 */
 /* @var $wp_query WP_Query */
-define('MDLD', __DIR__ . '/../../../models');
+
+require 'app.php';
 
 require_once MDLD . '/City/Data.php';
 $data = new City\Data();

@@ -3,7 +3,7 @@
 Template Name: Countries
 */
 
-define('MDLD', __DIR__ . '/../../../models');
+require 'app.php';
 
 require_once MDLD . '/Country/Data.php';
 

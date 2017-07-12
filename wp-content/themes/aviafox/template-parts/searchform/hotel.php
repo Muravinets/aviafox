@@ -1,4 +1,7 @@
-<!-- hotel tab content -->
+<?php
+/* @var $form SearchForm */
+
+?><!-- hotel tab content -->
 <div id="twidget-tab2" class="twidget-tab">
     <form action="https://search.hotellook.com/" method="get" autocomplete="off" target="_blank">
     <ul class="twidget-form-list clearfix">
@@ -64,7 +67,7 @@
             </div>
         </li>
         <!-- partner marker -->
-        <input type="hidden" name="marker" value="65544">
+        <input type="hidden" name="marker" value="<?= $form->getMarker() ?>">
         <!-- hotel search language -->
         <input type="hidden" name="language" value="ru">
         <!-- submit button -->
