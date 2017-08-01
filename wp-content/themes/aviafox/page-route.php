@@ -9,15 +9,27 @@ require 'app.php';
 require_once MDLD . '/City/Data.php';
 $data = new City\Data();
 
-$link = trim(get_page_link(get_the_ID()), "/");
-$linkParts = explode('/', $link);
+//		echo '<pre>';
+//		var_dump($wp_query->query_vars);
+//		echo '</pre>';
+//		exit;
+
+if (isset($wp_query->query_vars['WP_Route']) && $wp_query->query_vars['WP_Route'] == 'wp-router-pageroute')
+{
+    $departureName = $wp_query->query_vars['route_departure_name'];
+    $destinationName = $wp_query->query_vars['route_destination_name'];
+}
+else
+{
+	$link          = trim( get_page_link( get_the_ID() ), "/" );
+	$linkParts     = explode( '/', $link );
+	$departureName = $linkParts[ count( $linkParts ) - 2 ];
+    $destinationName = $linkParts[count($linkParts) - 1];
+}
 
 // Determine departure
-$departureName = $linkParts[count($linkParts) - 2];
 $departure = $data->findUri($departureName);
-
 // Determine destination
-$destinationName = $linkParts[count($linkParts) - 1];
 $destination = $data->findUri($destinationName);
 
 require_once MDLD . '/Route.php';
