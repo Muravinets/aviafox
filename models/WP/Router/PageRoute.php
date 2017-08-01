@@ -15,7 +15,7 @@ class PageRoute
 	public static function generate_routes( WP_Router $router )
 	{
 		$router->add_route('wp-router-pageroute', array(
-			'path' => '^route/(.*?)/(.*?)$',
+			'path' => '^routes/(.*?)/(.*?)$',
 			'query_vars' => array(
 				'route_departure_name' => 1,
 				'route_destination_name' => 2,
