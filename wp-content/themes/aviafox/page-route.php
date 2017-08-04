@@ -44,6 +44,7 @@ add_shortcode('ROUTE_TITLE', function() {
 });
 
 add_filter( 'aioseop_title', 'do_shortcode' );
+add_filter( 'aioseop_description', 'do_shortcode');
 add_filter( 'aioseop_canonical_url', function ($url)
 {
 	global $wp_query;
@@ -61,13 +62,6 @@ $searchForm
     ->setDestinationCode($destination->getCode())
 ;
 $wp_query->query_vars['searchForm'] = $searchForm;
-
-$wp_query->query_vars['pageTitle'] =
-    'Найти дешевые авиабилеты по направлению ' . $route->getTitle() . ' поможет aviafox.com';
-$wp_query->query_vars['pageDescription'] =
-	'Aviafox.com находит самые дешевые варианты перелета по направлению ' . $route->getTitle() . '.' .
-	' Удобный поиск находит скидки и льготные авиабилеты.'
-;
 
 $H1 = 'Направление ' . $route->getTitle();
 
