@@ -36,6 +36,20 @@ require_once MDLD . '/Route.php';
 $route = new Route($departure, $destination);
 $wp_query->query_vars['route'] = $route;
 
+add_shortcode('ROUTE_TITLE', function() {
+    global $wp_query;
+    /* @var $route Route */
+	$route = $wp_query->query_vars['route'];
+	return $route->getTitle();
+});
+
+add_filter( 'aioseop_title', 'do_shortcode' );
+
+function change_wordpress_seo_title( $title ){
+	$title = 'modified title';
+	return $title;
+}
+
 require_once MDLD . '/SearchForm.php';
 $searchForm = new SearchForm();
 $searchForm
