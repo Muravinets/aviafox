@@ -13,14 +13,12 @@ $cities = [
 unset($cities[$route->getDeparture()->getCode()]);
 unset($cities[$route->getDestination()->getCode()]);
 
-while (count($cities) > 2) {
-	array_pop($cities);
-}
-
 $cities = [
     $route->getDeparture()->getCode(),
 	$route->getDestination()->getCode(),
 ] + $cities;
+
+$cities = array_slice($cities, 0, 3, true);
 
 /* @var $wp_query WP_Query */
 $wp_query->query_vars['popularDestinationsCities'] = $cities;
