@@ -44,6 +44,15 @@ add_shortcode('ROUTE_TITLE', function() {
 });
 
 add_filter( 'aioseop_title', 'do_shortcode' );
+add_filter( 'aioseop_canonical_url', function ($url)
+{
+	global $wp_query;
+	/* @var $route Route */
+	$route = $wp_query->query_vars['route'];
+
+    $url = str_replace('route-page', 'routes', $url);
+    return rtrim($url, "/") . '/' . $route->getDeparture()->getUriName() . '/' . $route->getDestination()->getUriName();
+} );
 
 require_once MDLD . '/SearchForm.php';
 $searchForm = new SearchForm();
