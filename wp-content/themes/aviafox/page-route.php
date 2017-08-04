@@ -45,11 +45,6 @@ add_shortcode('ROUTE_TITLE', function() {
 
 add_filter( 'aioseop_title', 'do_shortcode' );
 
-function change_wordpress_seo_title( $title ){
-	$title = 'modified title';
-	return $title;
-}
-
 require_once MDLD . '/SearchForm.php';
 $searchForm = new SearchForm();
 $searchForm

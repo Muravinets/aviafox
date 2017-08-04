@@ -21,7 +21,8 @@ class PageRoute
 			&&
 			'wp-router-pageroute' === $query->query_vars[WP_Router_Page::QUERY_VAR]
 		) {
-			$query->query_vars['p'] = 76;
+			$post = get_page_by_path('route-page');
+			$query->query_vars['p'] = $post->ID;
 			$query->query_vars['post_type'] = 'page';
 		}
 	}
