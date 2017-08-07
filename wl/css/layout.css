@@ -1,55 +1,95 @@
 @CHARSET "UTF-8";
 
-img {
-    width: auto\9;
-    height: auto;
-    max-width: 100%;
-    display: inline-block;
-    vertical-align: middle;
+.image img,
+header img
+{
+	width: auto\9;
+	height: auto;
+	max-width: 100%;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.image
+{
+	position: absolute;
+	top: -2.3em;
 }
 
 /************************************************/
 /*			 		Header 	 					*/
 /************************************************/
-header.site-header
+body > header
 {
 	width: 100%;
+	position: relative;
+}
+@media (min-width: 1080px)
+{
+	body > header:before
+	{
+		display: none;
+	}
+}
+@media (max-width: 1079px)
+{
+	.image
+	{
+		display: none;
+	}
+	body > header
+	{
+		background: rgba(0, 0, 0, 0) url('/wp-content/themes/aviafox/assets/images/img-05.jpg');
+		background-position-y: 70%;
+		background-size: 100% 230%;
+	}
 }
 
-header.site-header > section.top-bar
+body > header > section
 {
+	box-sizing: border-box;
 	position: relative;
+	z-index: 1;
+}
+body > header > section.top-bar
+{
 	padding: 1rem 0;
 }
-
-header.site-header h1
+body > header > section.page-title
 {
-	margin: 0;
+	margin: auto;
+	max-width: 764px;
+	padding: 2rem 1rem;
 }
 
-header.site-header h1,
-header.site-header .logo
+body > header .logo,
+body > header .site-title
 {
+	position: relative;
 	width: 100%;
 	text-align: center;
 	z-index: 2;
 }
-
-header.site-header .logo img
+body > header .site-title
 {
-	width: 25%;
+	margin-top: -0.5rem;
 }
 
-.bg-image
+body > header .logo img
 {
-	position: absolute;
-	top: 0;
+	width: 44%;
 }
 
-.bg-image img
+@media (min-width: 914px)
 {
-    display: block;
-    width: 100%;
+	body > header .logo img
+	{
+		width: 25%;
+	}
+	body > header .site-title
+	{
+		margin-top: -1rem;
+	}
 }
 
 /************************************************/
