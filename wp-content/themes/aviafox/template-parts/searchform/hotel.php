@@ -44,7 +44,7 @@
             </li>
             <!-- hotel guests selection -->
             <li class="twidget-hotel-guest">
-                <label for="twidget-guest-detail">Гости</label>
+                <label>Гости</label>
                 <div class="twidget-guest-detail">
                     <div class="twidget-guest-no"><span id="twidget-g-no">1</span> <span class="twidget-guest-caption">гость</span></div>
                 </div>
