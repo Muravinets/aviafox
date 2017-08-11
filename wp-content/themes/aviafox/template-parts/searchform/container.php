@@ -42,7 +42,7 @@ $markerParam = 'shmarker=' . $form->getMarker();
                            href="http://c14.travelpayouts.com/click?<?= $markerParam ?>&promo_id=199&source_type=link&type=click"
                             ><i class="fa fa-i-travel-23-512"></i><span>Экскурсии</span></a>
                     </li>
-                    <li id="twidget-excursions-li">
+                    <li id="twidget-transfers-li">
                         <a target="_blank"
                            href="http://c1.travelpayouts.com/click?<?= $markerParam ?>&promo_id=647&source_type=customlink&type=click&custom_url=https%3A%2F%2Fkiwitaxi.ru"
                            title="Автомобильные трансферы по всему миру"
