@@ -9,7 +9,7 @@
         <input type="hidden" name="marker" value="<?= $form->getMarker() ?>">
         <!-- with_request flag -->
         <input type="hidden" name="with_request" value="1">
-        <!-- Form elements -->
+
         <ul class="twidget-form-list clearfix">
             <!-- origin input -->
             <li class="twidget-origin">
