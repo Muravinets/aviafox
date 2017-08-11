@@ -7,3 +7,13 @@ section.hotels h2
 {
     color: #d27f3d;
 }
+
+.route-content .sh-link a {
+    color: #d27f3d;
+    font-size: 1.63em;
+    font-weight: 300;
+}
+
+.route-content .sh-link a:hover {
+    text-decoration: underline;
+}

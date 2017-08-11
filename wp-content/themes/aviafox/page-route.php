@@ -65,9 +65,12 @@ $wp_query->query_vars['searchForm'] = $searchForm;
 
 $H1 = 'Направление ' . $route->getTitle();
 
-add_action('wp_head', function(){ ?>
-    <link rel="stylesheet" type="text/css" href="<?php bloginfo('template_directory') ?>/assets/css/route/layout.css?v=5.0" />
-    <link rel="stylesheet" type="text/css" href="<?php bloginfo('template_directory') ?>/assets/css/route/styles.css?v=5.0" />
+add_action('wp_head', function()
+{
+	$styleVersion = '?v=' . ($_SERVER['HTTP_HOST'] == 'wp.aviafox.local' ? time() : '5.1');
+    ?>
+    <link rel="stylesheet" type="text/css" href="<?php bloginfo('template_directory') ?>/assets/css/route/layout.css?v=<?= $styleVersion ?>" />
+    <link rel="stylesheet" type="text/css" href="<?php bloginfo('template_directory') ?>/assets/css/route/styles.css?v=<?= $styleVersion ?>" />
 <? });
 
 get_header('base');
