@@ -50,7 +50,7 @@
                     <div class="twidget-input-box">
                         <label for="twidget-origin">Обратно</label>
                         <input type="text" name="return_date" size="10" placeholder="Обратно">
-                        <div class="twidget-icon-cal""></div>
+                        <div class="twidget-icon-cal"></div>
                         <div class="twidget-icon-delete" style="display: none;"></div>
                         <span class="twidget-date-text twidget-date-return"></span>
                     </div>
