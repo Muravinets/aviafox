@@ -28,7 +28,7 @@
                 <div class="twidget-start-date twidget-form-item">
                     <div class="twidget-input-box">
                         <label for="checkIn">Прибытие</label>
-                        <input type="text" name="checkIn" placeholder="Прибытие">
+                        <input type="text" id="checkIn" name="checkIn" placeholder="Прибытие">
                         <div class="twidget-icon-cal"></div>
                         <span class="twidget-date-text twidget-date-checkin"></span>
                     </div>
@@ -36,7 +36,7 @@
                 <div class="twidget-end-date twidget-form-item">
                     <div class="twidget-input-box">
                         <label for="checkOut">Выезд</label>
-                        <input type="text" name="checkOut" placeholder="Выезд">
+                        <input type="text" id="checkOut" name="checkOut" placeholder="Выезд">
                         <div class="twidget-icon-cal"></div>
                         <span class="twidget-date-text twidget-date-checkout"></span>
                     </div>
