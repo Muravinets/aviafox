@@ -5,6 +5,11 @@
 <div id="twidget-tab1" class="twidget-tab active">
     <div class="clearfix"></div>
     <form action="https://wl.aviafox.com/flights" method="get" autocomplete="off" target="_blank">
+        <!-- partner marker -->
+        <input type="hidden" name="marker" value="<?= $form->getMarker() ?>">
+        <!-- with_request flag -->
+        <input type="hidden" name="with_request" value="1">
+        <!-- Form elements -->
         <ul class="twidget-form-list clearfix">
             <!-- origin input -->
             <li class="twidget-origin">
@@ -55,9 +60,9 @@
                         <span class="twidget-date-text twidget-date-return"></span>
                     </div>
                 </div>
+                <!-- one_way flag -->
+                <input type="hidden" name="one_way" disabled value="0">
             </li>
-            <!-- one_way flag -->
-            <input type="hidden" name="one_way" disabled value="0">
             <!-- flight passengers -->
             <li class="twidget-passengers">
                 <label for="twidget-passengers-detail">Пассажиры/Класс</label>
@@ -104,10 +109,6 @@
                 </div>
                 <!-- end passenger selection-->
             </li>
-            <!-- partner marker -->
-            <input type="hidden" name="marker" value="<?= $form->getMarker() ?>">
-            <!-- with_request flag -->
-            <input type="hidden" name="with_request" value="1">
             <!-- submit button -->
             <li class="twidget-submit-button">
                 <button type="submit">Найти билеты</button>
