@@ -55,7 +55,6 @@ if ( isset( $_POST['keywords'] ) && $_POST['keywords'] )
 			$errors[] = $keyword;
 			continue;
 		}
-		    continue;
 
 		$route = new Route($departure, $destination);
 		$urls[] = $route->getFullUrl();
