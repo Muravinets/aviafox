@@ -13,6 +13,8 @@ if ( isset( $_POST['keywords'] ) && $_POST['keywords'] )
 
 	$errors = [];
 	$urls = [];
+	$titles = [];
+	$descriptions = [];
 	$keywords = explode("\n", $_POST['keywords']);
 	foreach ($keywords as $counter => &$keyword)
 	{
@@ -54,6 +56,8 @@ if ( isset( $_POST['keywords'] ) && $_POST['keywords'] )
 		require_once MDLD . '/Route.php';
 		$route = new Route($departure, $destination);
 		$urls[] = $route->getFullUrl();
+//		$titles[] = $keyword;
+//		$descriptions[] = $keyword;
 	}
 }
 ?><html>
@@ -137,8 +141,8 @@ if ( isset( $_POST['keywords'] ) && $_POST['keywords'] )
 					<label for="titles">Заголовки</label>
 				</div>
 				<textarea id="titles" name="titles" rows="20"><?
-					if (isset($urls)) {
-						echo implode("\n", $urls);
+					if (isset($titles)) {
+						echo implode("\n", $titles);
 					}
 				?></textarea>
 			</li>
