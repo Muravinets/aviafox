@@ -31,11 +31,15 @@ class Route
 	 * Возвращает название направления.
 	 * Example: Симферополь - Москва
 	 *
+	 * @param bool $skipDefis
 	 * @return string
 	 */
-	public function getTitle()
+	public function getTitle($skipDefis = false)
 	{
-		return $this->departure->getTitle() . ' - ' . $this->destination->getTitle();
+		return $this->departure->getTitle()
+		       . ($skipDefis ? ' ' : ' - ')
+		       . $this->destination->getTitle()
+		;
 	}
 
 	/**

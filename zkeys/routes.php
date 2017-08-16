@@ -53,8 +53,6 @@ if ( isset( $_POST['keywords'] ) && $_POST['keywords'] )
 				continue;
 			}
 
-            $descParts[] = $city->getTitle();
-
 			if (
 				(is_object($departure) && ($city == $departure))
 				||
@@ -62,6 +60,8 @@ if ( isset( $_POST['keywords'] ) && $_POST['keywords'] )
 			) { // Fix double city
 				continue;
 			}
+
+            $descParts[] = $city->getTitle();
 
 			if (!is_object($departure))
 				$departure = $city;
@@ -79,9 +79,30 @@ if ( isset( $_POST['keywords'] ) && $_POST['keywords'] )
 		}
 
 		$route = new Route($departure, $destination);
+
+		$title = implode(' ', $descParts);
+		if (mb_strlen($title) > 33)
+		{
+		    $title = $route->getTitle(true);
+			if (mb_strlen($title) > 33) {
+				$errors[] = '"' . $keyword . '". Заголовок "' . $title . '" - длина ' . mb_strlen( $title );
+				continue;
+			}
+        }
+
+		$description = implode(' ', $descParts) . $descSuffix;
+		if (mb_strlen($description) > 75)
+		{
+			$description = $route->getTitle(true) . $descSuffix;
+			if (mb_strlen($description) > 75) {
+				$errors[] = '"' . $keyword . '". Описание "' . $description . '" - длина ' . mb_strlen( $description );
+				continue;
+			}
+        }
+
 		$urls[] = $route->getFullUrl();
-		$titles[] = implode(' ', $descParts);
-		$descriptions[] = implode(' ', $descParts) . $descSuffix;
+		$titles[] = $title;
+		$descriptions[] = $description;
 	}
 }
 ?><html>
