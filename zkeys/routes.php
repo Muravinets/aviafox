@@ -31,9 +31,9 @@ if ( isset( $_POST['keywords'] ) && $_POST['keywords'] )
 		$destination = null;
 
 		$words = explode(' ', $keyword);
-		continue;
 		foreach ($words as $word)
 		{
+		    continue;
 			if (!$word)
 				continue;
 
