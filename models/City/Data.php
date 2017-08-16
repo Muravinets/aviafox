@@ -87,8 +87,6 @@ class Data
 	    }
 
 	    $value = mb_strtolower($value);
-    	var_dump($this->dataTitled);
-    	exit;
 
 	    if (!isset($this->dataTitled[$value]))
 	    {

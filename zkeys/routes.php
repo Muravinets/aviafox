@@ -33,7 +33,6 @@ if ( isset( $_POST['keywords'] ) && $_POST['keywords'] )
 		$words = explode(' ', $keyword);
 		foreach ($words as $word)
 		{
-//		    continue;
 			if (!$word)
 				continue;
 
@@ -56,6 +55,7 @@ if ( isset( $_POST['keywords'] ) && $_POST['keywords'] )
 			$errors[] = $keyword;
 			continue;
 		}
+		    continue;
 
 		$route = new Route($departure, $destination);
 		$urls[] = $route->getFullUrl();
