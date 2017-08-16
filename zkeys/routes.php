@@ -22,6 +22,8 @@ if ( isset( $_POST['keywords'] ) && $_POST['keywords'] )
 	foreach ($keywords as $counter => &$keyword)
 	{
 		$keyword = trim($keyword);
+		$keyword = trim($keyword, '"');
+		$keyword = trim($keyword);
 		if (!$keyword) {
 			unset($keywords[$counter]);
 			continue;
