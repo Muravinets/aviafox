@@ -35,6 +35,11 @@ class Object
     public $titleFrom;
     public $timeZone;
 
+	/**
+	 * @var string[]
+	 */
+    public $synonyms;
+
     /**
      * @var \Country\Object
      */
@@ -107,6 +112,9 @@ class Object
         $this->timeZone = $data->time_zone;
         if (isset($data->name_translations->ru)) {
             $this->title = $data->name_translations->ru;
+        }
+        if (isset($data->synonyms)) {
+            $this->synonyms = $data->synonyms;
         }
     }
 

@@ -128,13 +128,26 @@ class Data
         	switch ($keyName) {
         		case 'title': {
         		    $key = mb_strtolower($object->$keyName);
+			        $key = str_replace('ё', 'е', $key);
+
+			        // Fix Saint-Petersburg in Russia and Petersburg in USA
+		            if (!isset($result[$key]))
+			            $result[$key] = $object;
+
+			        // Synonyms
+        		    if (is_array($object->synonyms) && count($object->synonyms))
+        		    {
+        		    	foreach ($object->synonyms as $synonym) {
+				            $result[mb_strtolower($synonym)] = $object;
+			            }
+		            }
+
         		    break;
 	            }
 		        default:
         	        $key = $object->$keyName;
+                    $result[$key] = $object;
 	        }
-
-            $result[$key] = $object;
         }
 
         return $result;

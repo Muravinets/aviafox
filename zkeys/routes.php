@@ -38,16 +38,26 @@ if ( isset( $_POST['keywords'] ) && $_POST['keywords'] )
 
 			try {
 				$city = $citiesData->findTitle($word);
-				if (!is_object($departure))
-					$departure = $city;
-				elseif (!is_object($destination))
-					$destination = $city;
-				else
-					$errors[] = '"' . $keyword . '". Several destinations';
 			}
 			catch (\City\Error\TitleNotFound $exception) {
 				continue;
 			}
+
+			if (
+				(is_object($departure) && ($city->getCode() == $departure->getCode()))
+				||
+				(is_object($destination) && $city == $destination)
+			) { // Fix double city
+				continue;
+			}
+
+			if (!is_object($departure))
+				$departure = $city;
+			elseif (!is_object($destination))
+				$destination = $city;
+			else
+				$errors[] = '"' . $keyword . '". Several destinations:"' . $departure->getCode() . '" - "' . $destination->getCode() . '"';
+
 		}
 
 		if (!is_object($destination))
