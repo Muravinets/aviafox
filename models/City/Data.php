@@ -21,6 +21,11 @@ class Data
      */
     protected $data;
 
+	/**
+	 * @var \City\Object[]
+	 */
+    protected $dataTitled;
+
     /**
      * @var boolean
      */
@@ -77,16 +82,21 @@ class Data
      */
     public function findTitle(string $value) : Object
     {
-	    foreach ($this->data as $object)
-	    {
-	    	if ( !strcmp(mb_strtolower($object->getTitle()), mb_strtolower($value)) )
-	    	{
-	    		return $object;
-		    }
+    	if (is_null($this->dataTitled)) {
+		    $this->dataTitled = $this->getList('title');
 	    }
 
-        require_once __DIR__ . '/Error/TitleNotFound.php';
-        throw new TitleNotFound($value);
+	    $value = mb_strtolower($value);
+    	var_dump($this->dataTitled);
+    	exit;
+
+	    if (!isset($this->dataTitled[$value]))
+	    {
+		    require_once __DIR__ . '/Error/TitleNotFound.php';
+		    throw new TitleNotFound($value);
+	    }
+
+        return $this->dataTitled[$value];
     }
 
     /**
@@ -117,7 +127,16 @@ class Data
         /* @var $object \City\Object */
         foreach ($this->data as $object)
         {
-            $result[$object->$keyName] = $object;
+        	switch ($keyName) {
+        		case 'title': {
+        		    $key = mb_strtolower($object->$keyName);
+        		    break;
+	            }
+		        default:
+        	        $key = $object->$keyName;
+	        }
+
+            $result[$key] = $object;
         }
 
         return $result;

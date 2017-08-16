@@ -33,7 +33,7 @@ if ( isset( $_POST['keywords'] ) && $_POST['keywords'] )
 		$words = explode(' ', $keyword);
 		foreach ($words as $word)
 		{
-		    continue;
+//		    continue;
 			if (!$word)
 				continue;
 
