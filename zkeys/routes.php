@@ -33,9 +33,9 @@ if ( isset( $_POST['keywords'] ) && $_POST['keywords'] )
 
 			try {
 				$city = $citiesData->findTitle($word);
-				if (!isset($departure))
+				if (!is_object($departure))
 					$departure = $city;
-				elseif (!isset($destination))
+				elseif (!is_object($destination))
 					$destination = $city;
 				else
 					$errors[] = '"' . $keyword . '". Several destinations';
@@ -45,7 +45,7 @@ if ( isset( $_POST['keywords'] ) && $_POST['keywords'] )
 			}
 		}
 
-		if (!isset($destination))
+		if (!is_object($destination))
 		{
 			$errors[] = $keyword;
 			continue;
@@ -127,6 +127,16 @@ if ( isset( $_POST['keywords'] ) && $_POST['keywords'] )
 					<label for="urls">Ссылки</label>
 				</div>
 				<textarea id="urls" name="urls" rows="20"><?
+					if (isset($urls)) {
+						echo implode("\n", $urls);
+					}
+				?></textarea>
+			</li>
+			<li>
+				<div>
+					<label for="titles">Заголовки</label>
+				</div>
+				<textarea id="titles" name="titles" rows="20"><?
 					if (isset($urls)) {
 						echo implode("\n", $urls);
 					}
