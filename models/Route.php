@@ -52,4 +52,13 @@ class Route
 		return $this->destination;
 	}
 
+	/**
+	 * @return string
+	 */
+	public function getFullUrl(): string
+	{
+		$baseUrl = 'https://www.aviafox.com/routes';
+		return $baseUrl . '/' . $this->departure->getUriName() . '/' . $this->destination->getUriName();
+	}
+
 }
