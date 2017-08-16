@@ -162,6 +162,8 @@ if ( isset( $_POST['keywords'] ) && $_POST['keywords'] )
 					}
 				?></textarea>
 			</li>
+        </ul>
+        <ul>
 			<li>
 				<div>
 					<label for="titles">Заголовки</label>
