@@ -16,6 +16,8 @@ if ( isset( $_POST['keywords'] ) && $_POST['keywords'] )
 	$errors = [];
 	$urls = [];
 	$titles = [];
+
+	$descSuffix = '. Поиск найдет и покажет низкие цены';
 	$descriptions = [];
 
 	$keywords = explode("\n", $_POST['keywords']);
@@ -32,6 +34,8 @@ if ( isset( $_POST['keywords'] ) && $_POST['keywords'] )
 		$departure = null;
 		$destination = null;
 
+		$descParts = [];
+
 		$words = explode(' ', $keyword);
 		foreach ($words as $word)
 		{
@@ -41,12 +45,18 @@ if ( isset( $_POST['keywords'] ) && $_POST['keywords'] )
 			try {
 				$city = $citiesData->findTitle($word);
 			}
-			catch (\City\Error\TitleNotFound $exception) {
+			catch (\City\Error\TitleNotFound $exception)
+            {
+			    if (count($descParts) < 3)
+				    $descParts[] = count($descParts) ? $word : mb_convert_case($word, MB_CASE_TITLE);
+
 				continue;
 			}
 
+            $descParts[] = $city->getTitle();
+
 			if (
-				(is_object($departure) && ($city->getCode() == $departure->getCode()))
+				(is_object($departure) && ($city == $departure))
 				||
 				(is_object($destination) && $city == $destination)
 			) { // Fix double city
@@ -70,8 +80,8 @@ if ( isset( $_POST['keywords'] ) && $_POST['keywords'] )
 
 		$route = new Route($departure, $destination);
 		$urls[] = $route->getFullUrl();
-//		$titles[] = $keyword;
-//		$descriptions[] = $keyword;
+		$titles[] = implode(' ', $descParts);
+		$descriptions[] = implode(' ', $descParts) . $descSuffix;
 	}
 }
 ?><html>
@@ -159,6 +169,16 @@ if ( isset( $_POST['keywords'] ) && $_POST['keywords'] )
 				<textarea id="titles" name="titles" rows="20"><?
 					if (isset($titles)) {
 						echo implode("\n", $titles);
+					}
+				?></textarea>
+			</li>
+			<li>
+				<div>
+					<label for="descriptions">Описания</label>
+				</div>
+				<textarea id="descriptions" name="descriptions" rows="20"><?
+					if (isset($descriptions)) {
+						echo implode("\n", $descriptions);
 					}
 				?></textarea>
 			</li>
