@@ -24,45 +24,21 @@ if ( isset( $_POST['keywords'] ) && $_POST['keywords'] )
 			continue;
 		}
 
-		$departure = null;
-		$destination = null;
-
-		$words = explode(' ', $keyword);
-		foreach ($words as $word)
-		{
-			if (!$word)
-				continue;
-
-			try {
-				$city = $citiesData->findTitle($word);
-				if (!is_object($departure))
-					$departure = $city;
-				elseif (!is_object($destination))
-					$destination = $city;
-				else
-					$errors[] = '"' . $keyword . '". Several destinations';
-			}
-			catch (\City\Error\TitleNotFound $exception) {
-				continue;
-			}
+		$point = null;
+		try {
+			$point = $citiesData->findTitle( $keyword );
 		}
-
-		if (!is_object($destination))
-		{
+		catch (\City\Error\TitleNotFound $exception) {
 			$errors[] = $keyword;
 			continue;
 		}
 
-		require_once MDLD . '/Route.php';
-		$route = new Route($departure, $destination);
-		$urls[] = $route->getFullUrl();
-//		$titles[] = $keyword;
-//		$descriptions[] = $keyword;
+		$urls[] = $point->getUriName();
 	}
 }
 ?><html>
 <head>
-	<title>Ссылки на направления по ключевым словам</title>
+	<title>Город по ключевым словам</title>
 	<link rel="stylesheet" type="text/css" href="normalize.css" media="all" />
 	<style>
 		body
@@ -103,7 +79,7 @@ if ( isset( $_POST['keywords'] ) && $_POST['keywords'] )
 	</style>
 </head>
 <body>
-    <h1>Ключевые слова в направления</h1>
+    <h1>Города</h1>
 
 	<? if (isset($errors) && count($errors)) : ?>
 	<ul class="errors">
@@ -130,21 +106,11 @@ if ( isset( $_POST['keywords'] ) && $_POST['keywords'] )
 			</li>
 			<li>
 				<div>
-					<label for="urls">Ссылки</label>
+					<label for="urls">Города</label>
 				</div>
 				<textarea id="urls" name="urls" rows="20"><?
 					if (isset($urls)) {
 						echo implode("\n", $urls);
-					}
-				?></textarea>
-			</li>
-			<li>
-				<div>
-					<label for="titles">Заголовки</label>
-				</div>
-				<textarea id="titles" name="titles" rows="20"><?
-					if (isset($titles)) {
-						echo implode("\n", $titles);
 					}
 				?></textarea>
 			</li>
