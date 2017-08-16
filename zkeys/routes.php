@@ -8,17 +8,19 @@ define( 'MDLD', __DIR__ . '/../models' );
 
 if ( isset( $_POST['keywords'] ) && $_POST['keywords'] )
 {
+	require_once MDLD . '/Route.php';
 	require_once MDLD . '/City/Data.php';
+
 	$citiesData = new \City\Data();
 
 	$errors = [];
 	$urls = [];
 	$titles = [];
 	$descriptions = [];
+
 	$keywords = explode("\n", $_POST['keywords']);
 	foreach ($keywords as $counter => &$keyword)
 	{
-	    continue;
 		$keyword = trim($keyword);
 		if (!$keyword) {
 			unset($keywords[$counter]);
@@ -29,6 +31,7 @@ if ( isset( $_POST['keywords'] ) && $_POST['keywords'] )
 		$destination = null;
 
 		$words = explode(' ', $keyword);
+		continue;
 		foreach ($words as $word)
 		{
 			if (!$word)
@@ -54,7 +57,6 @@ if ( isset( $_POST['keywords'] ) && $_POST['keywords'] )
 			continue;
 		}
 
-		require_once MDLD . '/Route.php';
 		$route = new Route($departure, $destination);
 		$urls[] = $route->getFullUrl();
 //		$titles[] = $keyword;
