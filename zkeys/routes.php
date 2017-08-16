@@ -100,6 +100,7 @@ if ( isset( $_POST['keywords'] ) && $_POST['keywords'] )
 			}
         }
 
+		$keyword = '"' . $keyword . '"';
 		$urls[] = $route->getFullUrl();
 		$titles[] = $title;
 		$descriptions[] = $description;
