@@ -7,6 +7,6 @@
 
 </head>
 <body>
-	<script charset="utf-8" src="//www.travelpayouts.com/widgets/9d7a5dd68fa589e083125ce486b4cd17.js?v=991" async></script>
+	<script charset="utf-8" src="//www.travelpayouts.com/widgets/9d7a5dd68fa589e083125ce486b4cd17.js?v=1041" async></script>
 </body>
 </html>

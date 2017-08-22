@@ -31,6 +31,12 @@ class SpecialOffers
      */
     private $destination;
 
+	/**
+	 * WL
+	 * @var string
+	 */
+	private $host = 'wl.aviafox.com';
+
     /**
      * @var integer
      */
@@ -58,7 +64,7 @@ class SpecialOffers
         $result = '//www.travelpayouts.com/ducklett/scripts.js?'
                 . 'widget_type=' . $this->widgetType
                 . '&currency=rub'
-                . '&host=wl.aviafox.com%2Fflights'
+                . '&host=' . $this->host . '%2Fflights' // Fix TP special offers
                 . '&marker=' . TP\Service::getMarker()
                 . '&limit=' . $this->limit;
         ;

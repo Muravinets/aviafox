@@ -4,7 +4,7 @@
 ?><!--flight tab content-->
 <div id="twidget-tab1" class="twidget-tab active">
     <div class="clearfix"></div>
-    <form action="https://wl.aviafox.com/flights" method="get" autocomplete="off" target="_blank">
+    <form action="<?= $form->getAviaSubmitUrl() ?>" method="get" autocomplete="off" target="_blank">
         <!-- partner marker -->
         <input type="hidden" name="marker" value="<?= $form->getMarker() ?>">
         <!-- with_request flag -->

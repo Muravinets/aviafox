@@ -8,9 +8,7 @@
 
 class SearchForm
 {
-    private $aviaSubmitUrl = 'https://wl.aviafox.com';
-//  'https://aviafox.com/search_flights/'
-//  'http://hydra.aviasales.ru/searches/new'
+    private $aviaSubmitUrl = 'https://wl.aviafox.com/flights';
 
     private $locale = 'ru';
     private $marker;
@@ -52,7 +50,7 @@ class SearchForm
         return $params;
     }
 
-    public function getAviaSubmitUrl()
+    public function getAviaSubmitUrl() : string
     {
         return $this->aviaSubmitUrl;
     }
