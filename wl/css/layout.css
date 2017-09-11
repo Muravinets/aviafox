@@ -39,7 +39,7 @@ body > header
 	}
 	body > header
 	{
-		background: rgba(0, 0, 0, 0) url('/wp-content/themes/aviafox/assets/images/img-05.jpg');
+		background: rgba(0, 0, 0, 0) url('https://www.aviafox.com/wl/img/bg-05.jpg');
 		background-position-y: 70%;
 		background-size: 100% 230%;
 	}
