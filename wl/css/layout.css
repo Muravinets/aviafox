@@ -19,14 +19,14 @@ header img
 /************************************************/
 /*			 		Header 	 					*/
 /************************************************/
-body > header
+header
 {
 	width: 100%;
 	position: relative;
 }
 @media (min-width: 1080px)
 {
-	body > header:before
+	header:before
 	{
 		display: none;
 	}
@@ -37,7 +37,7 @@ body > header
 	{
 		display: none;
 	}
-	body > header
+	header
 	{
 		background: rgba(0, 0, 0, 0) url('https://www.aviafox.com/wl/img/bg-05.jpg');
 		background-position-y: 70%;
@@ -45,48 +45,48 @@ body > header
 	}
 }
 
-body > header > section
+header > section
 {
 	box-sizing: border-box;
 	position: relative;
 	z-index: 1;
 }
-body > header > section.top-bar
+header > section.top-bar
 {
 	padding: 1rem 0;
 }
-body > header > section.page-title
+header > section.page-title
 {
 	margin: auto;
 	max-width: 764px;
 	padding: 2rem 1rem;
 }
 
-body > header .logo,
-body > header .site-title
+header .logo,
+header .site-title
 {
 	position: relative;
 	width: 100%;
 	text-align: center;
 	z-index: 2;
 }
-body > header .site-title
+header .site-title
 {
 	margin-top: -0.5rem;
 }
 
-body > header .logo img
+header .logo img
 {
 	width: 44%;
 }
 
 @media (min-width: 914px)
 {
-	body > header .logo img
+	header .logo img
 	{
 		width: 25%;
 	}
-	body > header .site-title
+	header .site-title
 	{
 		margin-top: -1rem;
 	}
