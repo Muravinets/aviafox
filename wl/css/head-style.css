@@ -1,37 +1,36 @@
 @CHARSET "UTF-8";
 
-/* 1 style */
-.mewtwo-widget--whitelabel_ru .mewtwo-flights { 
-	background: #00AFDD !important;
-    border-color: #EEEEEE !important;
-    border-radius: 0px !important ;
-  }
-  .mewtwo-widget--whitelabel_ru .mewtwo-flights-header__link,
-  .mewtwo-widget--whitelabel_ru .mewtwo-flights label,
-  .mewtwo-widget--whitelabel_ru .mewtwo-flights-link_to_multi { color: #FFFFFF !important;
-  }
+.mewtwo-widget--whitelabel_ru .mewtwo-flights { background: #92cad8 !important;
+  border-color: #00b1dd !important;
+  border-radius: 0px !important ;
+}
+.mewtwo-widget--whitelabel_ru .mewtwo-flights-header__link,
+.mewtwo-widget--whitelabel_ru .mewtwo-flights label,
+.mewtwo-widget--whitelabel_ru .mewtwo-flights-link_to_multi { color: #fff !important;
+}
 
-  .mewtwo-widget--whitelabel_ru .mewtwo-flights-submit_button button { background: #FFA600 !important;
-    color: #FFFFFF !important;
-  }
-  .mewtwo-widget--whitelabel_ru .mewtwo-flights-submit_button button:hover { background: #ffaf1a !important;
-  }
-  .mewtwo-widget--whitelabel_ru .mewtwo-flights-link_to_multi:before { background-image: url("data:image/svg+xml,%3Csvg%20width%3D%2217%22%20height%3D%2216%22%20viewBox%3D%220%200%2017%2016%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Ctitle%3Eicon%3C%2Ftitle%3E%3Cpath%20d%3D%22M11.885%202.893c2.242%201.3%203.41%203.22%203.452%205.613-.512-.266-.577-.232-1.12-.24-.157-1.71-.333-2.774-3.19-4.542C9.998%205.497%208.78%205.39%208.395%205.388c-1.475-.013-2.716-1.255-2.73-2.722C5.65%201.2%206.92-.014%208.394%200c1.384.012%202.64%201.125%202.787%202.468%200%200%20.43.264.705.425zM1.208%209.123c.095-2.59%201.242-4.52%203.335-5.683.005.577.066.62.315%201.1-1.436.943-2.294%201.598-2.514%204.95%202.05.08%202.528%201.202%202.706%201.544.68%201.31.167%202.987-1.122%203.688-1.288.7-2.955.15-3.636-1.158-.64-1.228-.246-2.86.87-3.62%200%200%20.033-.502.046-.82zm10.874%205.912c-2.27%201.252-4.515%201.264-6.59.068.493-.3.497-.375.783-.836%201.546.745%202.55%201.143%205.536-.395-.987-1.797-.27-2.786-.068-3.114.77-1.258%202.474-1.682%203.74-.94%201.26.745%201.65%202.457.878%203.714-.724%201.18-2.324%201.684-3.55%201.12%200%200-.448.23-.728.383z%22%20fill%3D%22%23FFFFFF%22%20fill-rule%3D%22evenodd%22%2F%3E%3C%2Fsvg%3E") !important;
-  }
-  
+.mewtwo-widget--whitelabel_ru .mewtwo-flights-submit_button button { background: #feba31 !important;
+  color: #fff !important;
+}
+.mewtwo-widget--whitelabel_ru .mewtwo-flights-submit_button button:hover { background: #fec146 !important;
+}
+.mewtwo-widget--whitelabel_ru .mewtwo-flights-link_to_multi:before { background-image: url("data:image/svg+xml,%3Csvg%20width%3D%2217%22%20height%3D%2216%22%20viewBox%3D%220%200%2017%2016%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Ctitle%3Eicon%3C%2Ftitle%3E%3Cpath%20d%3D%22M11.885%202.893c2.242%201.3%203.41%203.22%203.452%205.613-.512-.266-.577-.232-1.12-.24-.157-1.71-.333-2.774-3.19-4.542C9.998%205.497%208.78%205.39%208.395%205.388c-1.475-.013-2.716-1.255-2.73-2.722C5.65%201.2%206.92-.014%208.394%200c1.384.012%202.64%201.125%202.787%202.468%200%200%20.43.264.705.425zM1.208%209.123c.095-2.59%201.242-4.52%203.335-5.683.005.577.066.62.315%201.1-1.436.943-2.294%201.598-2.514%204.95%202.05.08%202.528%201.202%202.706%201.544.68%201.31.167%202.987-1.122%203.688-1.288.7-2.955.15-3.636-1.158-.64-1.228-.246-2.86.87-3.62%200%200%20.033-.502.046-.82zm10.874%205.912c-2.27%201.252-4.515%201.264-6.59.068.493-.3.497-.375.783-.836%201.546.745%202.55%201.143%205.536-.395-.987-1.797-.27-2.786-.068-3.114.77-1.258%202.474-1.682%203.74-.94%201.26.745%201.65%202.457.878%203.714-.724%201.18-2.324%201.684-3.55%201.12%200%200-.448.23-.728.383z%22%20fill%3D%22%23fff%22%20fill-rule%3D%22evenodd%22%2F%3E%3C%2Fsvg%3E") !important;
+}
+.mewtwo-widget--whitelabel_ru .mewtwo-swap_button { background-image:
+        url("data:image/svg+xml,%3Csvg%20width%3D%2215%22%20height%3D%2213%22%20viewBox%3D%220%200%2015%2013%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Ctitle%3ECombined%20Shape%3C%2Ftitle%3E%3Cpath%20d%3D%22M11%204v1.382c0%20.34.276.618.618.618.128%200%20.25-.044.348-.114l2.592-1.98c.082-.058.152-.132.214-.218.382-.512.272-1.238-.236-1.618L11.968.114c-.1-.07-.222-.114-.35-.114-.342%200-.618.276-.618.618V2H4c-.552%200-1%20.446-1%201s.448%201%201%201h7zm-7%207h7c.552%200%201-.446%201-1s-.448-1-1-1H4V7.618C4%207.276%203.724%207%203.382%207c-.128%200-.25.044-.35.114L.464%209.07c-.508.38-.618%201.106-.236%201.618.062.086.132.16.214.218l2.592%201.98c.098.07.22.114.348.114.342%200%20.618-.278.618-.618V11z%22%20fill%3D%22%2392cad8%22%20fill-rule%3D%22evenodd%22%2F%3E%3C%2Fsvg%3E") !important;
+}
+.mewtwo-widget--whitelabel_ru .mewtwo-flights-dates-depart-icon,
+.mewtwo-widget--whitelabel_ru .mewtwo-flights-dates-return-icon { background-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D\'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\'%20viewBox%3D\'0%200%2015%2017\'%3E%3Cpath%20fill%3D\'%2392cad8\'%20d%3D\'M0%205v10c0%201.1.9%202%202%202h11c1.1%200%202-.9%202-2V5H0zm5%2010H2v-2h3v2zm0-3H2v-2h3v2zm0-3H2V7h3v2zm4%206H6v-2h3v2zm0-3H6v-2h3v2zm0-3H6V7h3v2zm4%206h-3v-2h3v2zm0-3h-3v-2h3v2zm0-3h-3V7h3v2zM13%202h-1V1c0-.6-.4-1-1-1h-1c-.6%200-1%20.4-1%201v1H6V1c0-.6-.4-1-1-1H4c-.6%200-1%20.4-1%201v1H2C.9%202%200%202.9%200%204h15c0-1.1-.9-2-2-2z\'%2F%3E%3C%2Fsvg%3E") !important;
+}
 
-  .mewtwo-widget--whitelabel_ru .mewtwo-flights-dates-depart-icon,
-  .mewtwo-widget--whitelabel_ru .mewtwo-flights-dates-return-icon { background-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D\'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\'%20viewBox%3D\'0%200%2015%2017\'%3E%3Cpath%20fill%3D\'%2300AFDD\'%20d%3D\'M0%205v10c0%201.1.9%202%202%202h11c1.1%200%202-.9%202-2V5H0zm5%2010H2v-2h3v2zm0-3H2v-2h3v2zm0-3H2V7h3v2zm4%206H6v-2h3v2zm0-3H6v-2h3v2zm0-3H6V7h3v2zm4%206h-3v-2h3v2zm0-3h-3v-2h3v2zm0-3h-3V7h3v2zM13%202h-1V1c0-.6-.4-1-1-1h-1c-.6%200-1%20.4-1%201v1H6V1c0-.6-.4-1-1-1H4c-.6%200-1%20.4-1%201v1H2C.9%202%200%202.9%200%204h15c0-1.1-.9-2-2-2z\'%2F%3E%3C%2Fsvg%3E") !important;
-  }
-
-  .mewtwo-widget--whitelabel_ru .mewtwo-flights-dates-return-iconx { background-image: url("data:image/svg+xml,%3Csvg%20width%3D%22100%22%20height%3D%22100%22%20viewBox%3D%220%200%20100%20100%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Ctitle%3ESlice%201%3C%2Ftitle%3E%3Cpath%20d%3D%22M98.17%2089.33L58.837%2050l39.33-39.33c2.442-2.442%202.442-6.397%200-8.84-2.438-2.44-6.395-2.44-8.837%200L50%2041.163%2010.67%201.832C8.23-.61%204.272-.61%201.83%201.83c-2.44%202.436-2.44%206.395%200%208.837L41.163%2050%201.832%2089.33c-2.442%202.442-2.442%206.397%200%208.84%202.44%202.44%206.395%202.44%208.837%200L50%2058.837l39.33%2039.33c2.442%202.442%206.4%202.442%208.84%200%202.44-2.44%202.44-6.395%200-8.837z%22%20fill%3D%22%2300AFDD%22%20fill-rule%3D%22evenodd%22%2F%3E%3C%2Fsvg%3E") !important;
-  }
-  .mewtwo-widget--whitelabel_ru .mewtwo-flights-dates-return-iconx:hover { opacity: 0.7;
-  }
-  .mewtwo-widget--whitelabel_ru .mewtwo-flights-container input[type="text"],
-  .mewtwo-widget--whitelabel_ru .mewtwo-flights-trip_class-wrapper { border-color: #ffffff !important;
-  }
-  .mewtwo-widget--whitelabel_ru .mewtwo-flights-trip_class-wrapper:after { background-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2010%206.1%22%3E%3Cpath%20fill%3D%22%2300AFDD%22%20d%3D%22M10%201.1L8.9%200%205%203.9%201.1%200%200%201.1l5%205%22%2F%3E%3C%2Fsvg%3E") !important;
-  }
-  .mewtwo-widget--whitelabel_ru .mewtwo-autocomplete-spinner div { background: #00AFDD !important;
-  }
+.mewtwo-widget--whitelabel_ru .mewtwo-flights-dates-return-iconx { background-image: url("data:image/svg+xml,%3Csvg%20width%3D%22100%22%20height%3D%22100%22%20viewBox%3D%220%200%20100%20100%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Ctitle%3ESlice%201%3C%2Ftitle%3E%3Cpath%20d%3D%22M98.17%2089.33L58.837%2050l39.33-39.33c2.442-2.442%202.442-6.397%200-8.84-2.438-2.44-6.395-2.44-8.837%200L50%2041.163%2010.67%201.832C8.23-.61%204.272-.61%201.83%201.83c-2.44%202.436-2.44%206.395%200%208.837L41.163%2050%201.832%2089.33c-2.442%202.442-2.442%206.397%200%208.84%202.44%202.44%206.395%202.44%208.837%200L50%2058.837l39.33%2039.33c2.442%202.442%206.4%202.442%208.84%200%202.44-2.44%202.44-6.395%200-8.837z%22%20fill%3D%22%2392cad8%22%20fill-rule%3D%22evenodd%22%2F%3E%3C%2Fsvg%3E") !important;
+}
+.mewtwo-widget--whitelabel_ru .mewtwo-flights-dates-return-iconx:hover { opacity: 0.7;
+}
+.mewtwo-widget--whitelabel_ru .mewtwo-flights-container input[type="text"],
+.mewtwo-widget--whitelabel_ru .mewtwo-flights-trip_class-wrapper { border-color: #ffffff !important;
+}
+.mewtwo-widget--whitelabel_ru .mewtwo-flights-trip_class-wrapper:after { background-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2010%206.1%22%3E%3Cpath%20fill%3D%22%2392cad8%22%20d%3D%22M10%201.1L8.9%200%205%203.9%201.1%200%200%201.1l5%205%22%2F%3E%3C%2Fsvg%3E") !important;
+}
+.mewtwo-widget--whitelabel_ru .mewtwo-autocomplete-spinner div { background: #92cad8 !important;
+}
