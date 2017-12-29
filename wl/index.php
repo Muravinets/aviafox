@@ -10,8 +10,8 @@
     <link rel="stylesheet" href="https://www.travelpayouts.com/mewtwo/styles.css" as="style" onload="this.rel='stylesheet'">
 <!--	<link rel="stylesheet" type="text/css" href="//www.travelpayouts.com/mewtwo_a/styles.css--><?//= $randSfx ?><!--" />-->
 
-	<link rel="stylesheet" type="text/css" href="css/layout.css<?= $randSfx ?>" />
-	<link rel="stylesheet" type="text/css" href="css/style.css<?= $randSfx ?>" />
+	<link rel="stylesheet" type="text/css" href="css/layout-stars.css<?= $randSfx ?>" />
+	<link rel="stylesheet" type="text/css" href="css/style-stars.css<?= $randSfx ?>" />
 
     <link href="https://www.aviafox.com/favicon.ico?v=2" rel="icon" type="image/x-icon">
     <link href="https://www.aviafox.com/favicon.ico?v=2" rel="shortcut icon" type="image/x-icon">
@@ -31,7 +31,7 @@
 <body>
 
 <div class="image">
-    <img src="/wl/img/bg-05.jpg" />
+    <img src="/wl/img/header-bg-sky-stars.jpg" />
 </div>
 
 <header>

@@ -1,0 +1,110 @@
+@CHARSET "UTF-8";
+
+.image img,
+header img
+{
+	width: auto\9;
+	height: auto;
+	max-width: 100%;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.image
+{
+	position: absolute;
+	/*top: -36.3em;*/
+}
+
+/************************************************/
+/*			 		Header 	 					*/
+/************************************************/
+header
+{
+	width: 100%;
+	position: relative;
+}
+@media (min-width: 1080px)
+{
+	header:before
+	{
+		display: none;
+	}
+}
+@media (max-width: 1079px)
+{
+	.image
+	{
+		display: none;
+	}
+	header
+	{
+		background: rgba(0, 0, 0, 0) url('https://www.aviafox.com/wl/img/header-bg-sky-stars.jpg');
+		background-position-y: 70%;
+		background-size: 100% 230%;
+	}
+}
+
+header > section
+{
+	box-sizing: border-box;
+	position: relative;
+	z-index: 1;
+}
+header > section.top-bar
+{
+	padding: 1rem 0;
+}
+header > section.page-title
+{
+	margin: auto;
+	max-width: 764px;
+	padding: 2rem 1rem;
+}
+
+header .logo,
+header .site-title
+{
+	position: relative;
+	width: 100%;
+	text-align: center;
+	z-index: 2;
+}
+header .site-title
+{
+	margin-top: -0.5rem;
+}
+
+header .logo img
+{
+	width: 44%;
+}
+
+@media (min-width: 914px)
+{
+	header .logo img
+	{
+		width: 25%;
+	}
+	header .site-title
+	{
+		margin-top: -1rem;
+	}
+}
+
+/************************************************/
+/*			 		TPWL Widget					*/
+/************************************************/
+.TPWL-widget
+{
+	position: relative;
+}
+
+/************************************************/
+/*			 		Footer 	 					*/
+/************************************************/
+footer
+{
+    padding: 2rem;
+	position: relative;
+}
