@@ -76,10 +76,14 @@ header .site-title
 	/*background-color: rgba(255,255,255,0.5);*/
 }
 
-body .TPWL-template-header {
+body .TPWL-template-header,
+.TPWL-widget.user-settings .user-settings-informer
+{
 	background: none !important;
 }
-
+.TPWL-widget .mewtwo-widget--whitelabel_ru .mewtwo-flights {
+    background: none !important;
+}
 /************************************************/
 /*			 		Footer 	 					*/
 /************************************************/
