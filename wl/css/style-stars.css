@@ -81,7 +81,10 @@ body .TPWL-template-header,
 {
 	background: none !important;
 }
-.TPWL-widget .mewtwo-widget--whitelabel_ru .mewtwo-flights {
+.TPWL-widget .mewtwo-widget--whitelabel_ru .mewtwo-flights,
+.TPWL-widget .mewtwo-widget--whitelabel_ru .mewtwo-hotels,
+.TPWL-widget .mewtwo-widget--whitelabel_ru .mewtwo-hotels .mewtwo-best_offers:before
+{
     background: none !important;
 }
 /************************************************/
