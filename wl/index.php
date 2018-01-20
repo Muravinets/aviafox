@@ -31,7 +31,7 @@
 <body>
 
 <div class="image">
-    <img src="/wl/img/header-bg-sky-stars.jpg" />
+    <img src="/wl/img/sky-stars.jpg" />
 </div>
 
 <header>

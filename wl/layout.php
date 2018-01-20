@@ -18,7 +18,7 @@
 <body>
 
 <section class="bg-image">
-	<img src="//aviafox.com/web/images/img-05.jpg" />
+	<img src="//aviafox.com/web/images/sky-stars.jpg" />
 </section>
 
 <header>
