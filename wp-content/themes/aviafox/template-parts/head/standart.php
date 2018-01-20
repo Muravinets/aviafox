@@ -5,7 +5,7 @@
  *  
  */
 
-$styleVersion = '?v=' . ($_SERVER['HTTP_HOST'] == 'wp.aviafox.local' ? time() : '5.9');
+$styleVersion = '?v=' . ($_SERVER['HTTP_HOST'] == 'wp.aviafox.local' ? time() : '6.0');
 
 ?><meta charset="<?php bloginfo( 'charset' ) ?>">
 <meta name="viewport" content="width=device-width, initial-scale=1">
