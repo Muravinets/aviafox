@@ -8,7 +8,7 @@
 
 class SearchForm
 {
-    private $aviaSubmitUrl = 'https://tickets.aviafox.com/flights';
+    private $aviaSubmitUrl = 'https://ticket.aviafox.com/flights';
 
     private $locale = 'ru';
     private $marker;

@@ -4,7 +4,8 @@
 header img
 {
 	width: auto\9;
-	height: auto;
+	/*height: auto;*/
+	height: 200%;
 	max-width: 100%;
 	display: inline-block;
 	vertical-align: middle;
