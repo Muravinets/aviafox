@@ -35,7 +35,8 @@ class SpecialOffers
 	 * WL
 	 * @var string
 	 */
-	private $host = 'ticket.aviafox.com';
+//	private $host = 'ticket.aviafox.com';
+	private $host = 'test-wl.aviafox.com';
 
     /**
      * @var integer
