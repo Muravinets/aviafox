@@ -71,6 +71,9 @@ header .site-title
 /************************************************/
 /*			 		TPWL Widget					*/
 /************************************************/
+.TPWL-widget .mewtwo-widget--whitelabel_ru .mewtwo-flights .mewtwo-show_hotels-wrapper {
+	background: none !important;
+}
 .TPWL-widget
 {
 	/*background-color: rgba(255,255,255,0.5);*/
