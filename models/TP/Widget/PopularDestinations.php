@@ -17,8 +17,8 @@ class PopularDestinations
      * WL
      * @var string
      */
-//    private $host = 'ticket.aviafox.com';
-    private $host = 'test-wl.aviafox.com';
+    private $host = 'tickets.aviafox.com';
+//    private $host = 'test-wl.aviafox.com';
 
     /**
      * PopularDestinations constructor.
