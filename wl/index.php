@@ -5,7 +5,7 @@
 	<meta charset="utf-8"/>
 	<title>Поисковик авиабилетов</title>
 
-    <link rel="stylesheet" href="https://wl.aviafox.com/main.css?r=0.8934457344161988" as="style" onload="this.rel='stylesheet'">
+    <link rel="stylesheet" href="https://tickets.aviafox.com/main.css?r=0.8934457344161988" as="style" onload="this.rel='stylesheet'">
 <!--	<link rel="stylesheet" type="text/css" href="https://wl.aviafox.com/main.css?r=0.8934457344161988" />-->
     <link rel="stylesheet" href="https://www.travelpayouts.com/mewtwo/styles.css" as="style" onload="this.rel='stylesheet'">
 <!--	<link rel="stylesheet" type="text/css" href="//www.travelpayouts.com/mewtwo_a/styles.css--><?//= $randSfx ?><!--" />-->
@@ -26,7 +26,13 @@
 
 	<link rel="stylesheet" type="text/css" href="css/head-style.css<?= $randSfx ?>" />
 	<link rel="stylesheet" type="text/css" href="css/form.css<?= $randSfx ?>" />
-	
+
+    <style type="text/css">
+        .TPWL-widget .expired-search-plate {
+            display: <?= isset($_GET['expired_results']) ? 'inherit' : 'none' ?>;
+        }
+    </style>
+
 </head>
 <body>
 
