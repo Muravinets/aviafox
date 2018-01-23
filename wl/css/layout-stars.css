@@ -4,8 +4,6 @@
 header img
 {
 	width: auto\9;
-	/*height: auto;*/
-	height: 200%;
 	max-width: 100%;
 	display: inline-block;
 	vertical-align: middle;
@@ -15,8 +13,12 @@ header img
 {
 	position: absolute;
 	/*top: -36.3em;*/
+	/*top: -21.3em;*/
 }
-
+.image img
+{
+	height: 517px;
+}
 /************************************************/
 /*			 		Header 	 					*/
 /************************************************/
@@ -85,7 +87,8 @@ header .logo img
 {
 	header .logo img
 	{
-		width: 25%;
+		/*width: 25%;*/
+		width: 270px;
 	}
 	header .site-title
 	{
