@@ -151,6 +151,11 @@ body .TPWL-template-header,
     }
 }
 
+/* Form Multi Route */
+.TPWL-widget .mewtwo-widget--whitelabel_ru .mewtwo-flights-multi {
+    background: none !important;
+}
+
 /************************************************/
 /*			 		Footer 	 					*/
 /************************************************/
