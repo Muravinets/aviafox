@@ -205,6 +205,7 @@
 .twidget-form-list li button 
 {
 	height: 3rem;
+	padding: 0 7px;
 	text-align: center;
 	width: 100%;
 }

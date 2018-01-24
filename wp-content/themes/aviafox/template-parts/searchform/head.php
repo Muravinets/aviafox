@@ -1,5 +1,5 @@
 <?
-$styleVersion = '?v=' . ($_SERVER['HTTP_HOST'] == 'wp.aviafox.local' ? time() : '5.32');
+$styleVersion = '?v=' . ($_SERVER['HTTP_HOST'] == 'wp.aviafox.local' ? time() : '5.321');
 $stylesBaseUri = get_bloginfo('template_directory', 'display') . '/assets/css/search-form';
 
 ?><!--SF css files-->
