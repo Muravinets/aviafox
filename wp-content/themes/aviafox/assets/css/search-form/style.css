@@ -105,9 +105,8 @@ input[type=text]
 
 .twidget-tab-content button 
 {
- 	font-family: 'Roboto', sans-serif;
-	font-family: 'Open Sans', arial, sans-serif; 
-	font-weight: 600;
+	font-family: 'Open Sans', arial, sans-serif;
+	font-weight: 400;
 	
 	outline: none;
 	cursor: pointer;

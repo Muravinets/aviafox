@@ -151,6 +151,18 @@ body .TPWL-template-header,
     }
 }
 
+/* Form Button */
+.TPWL-widget .mewtwo-widget--whitelabel_ru .mewtwo-flights-submit_button button {
+    background: #35c014 !important;
+}
+.TPWL-widget .mewtwo-widget--whitelabel_ru .mewtwo-flights-submit_button button:hover {
+    background: #fec146 !important;
+    background: #35c014 !important;
+}
+.TPWL-widget #tpwl-main-form .mewtwo-flights-submit_button button {
+    font-size: 16px!important;
+}
+
 /* Form Multi Route */
 .TPWL-widget .mewtwo-widget--whitelabel_ru .mewtwo-flights-multi {
     background: none !important;
