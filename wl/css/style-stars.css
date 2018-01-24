@@ -179,6 +179,14 @@ body .TPWL-template-header,
     background: none !important;
 }
 
+.mewtwo-modal .mewtwo-autocomplete-list-item--shifted.mewtwo-autocomplete-list-item-info--active .mewtwo-autocomplete-list-item_text .mewtwo-autocomplete-list-item-info__name,
+.mewtwo-modal .mewtwo-autocomplete-list-item-info--active,
+.mewtwo-modal .mewtwo-autocomplete-list-item-info--active .mewtwo-autocomplete-list-item-info__bottom_block,
+.mewtwo-modal .mewtwo-autocomplete-list-item-info--active .mewtwo-autocomplete-list-item-info__details,
+.mewtwo-modal .mewtwo-autocomplete-list-item-info--active .mewtwo-autocomplete-list-item-info__right_block {
+    color: inherit!important;
+}
+
 /************************************************/
 /*			 		Footer 	 					*/
 /************************************************/
