@@ -170,6 +170,9 @@ body .TPWL-template-header,
 {
     font-size: 16px!important;
 }
+.TPWL-widget #tpwl-main-form .mewtwo-flights-multi-submit_button {
+    margin-top: 0;
+}
 
 /* Form Multi Route */
 .TPWL-widget .mewtwo-widget--whitelabel_ru .mewtwo-flights-multi {
