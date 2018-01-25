@@ -73,7 +73,7 @@ header .site-title
 /************************************************/
 
 /* Fix original */
-.TPWL-widget .mewtwo-widget--whitelabel_ru .mewtwo-tabs-tabs_list__item--active:after {
+.TPWL-widget #tpwl-main-form .mewtwo-tabs .mewtwo-tabs-tabs_list__item--active:after {
     background: none !important;
 }
 .TPWL-widget .mewtwo-widget--whitelabel_ru .mewtwo-flights .mewtwo-show_hotels-wrapper {
@@ -89,9 +89,9 @@ body .TPWL-template-header,
 {
 	background: none !important;
 }
-.TPWL-widget .mewtwo-widget--whitelabel_ru .mewtwo-flights,
-.TPWL-widget .mewtwo-widget--whitelabel_ru .mewtwo-hotels,
-.TPWL-widget .mewtwo-widget--whitelabel_ru .mewtwo-hotels .mewtwo-best_offers:before
+.TPWL-widget .mewtwo-widget .mewtwo-flights,
+.TPWL-widget .mewtwo-widget .mewtwo-hotels,
+.TPWL-widget .mewtwo-widget .mewtwo-hotels .mewtwo-best_offers:before
 {
     background: none !important;
 }
@@ -105,12 +105,12 @@ body .TPWL-template-header,
 @media (max-width: 1079px) {
 
     /* Tabs */
-    .TPWL-widget #tpwl-main-form .mewtwo-widget--whitelabel_ru .mewtwo-tabs_list .mewtwo-tabs-tabs_list__item
+    .TPWL-widget #tpwl-main-form .mewtwo-tabs .mewtwo-tabs-tabs_list__item
     /*, .TPWL-widget #tpwl-preroll-form .mewtwo-tabs-tabs_list__item, .TPWL-widget #tpwl-side-form .mewtwo-tabs-tabs_list__item */
     {
         /*border-bottom-color: #777 !important;*/
     }
-    .TPWL-widget #tpwl-main-form .mewtwo-widget--whitelabel_ru .mewtwo-tabs_list .mewtwo-tabs-tabs_list__item--active
+    .TPWL-widget #tpwl-main-form .mewtwo-tabs .mewtwo-tabs-tabs_list__item--active
     /*, .TPWL-widget #tpwl-preroll-form .mewtwo-tabs_list .mewtwo-tabs-tabs_list__item--active, */
     /*.TPWL-widget #tpwl-side-form .mewtwo-tabs_list .mewtwo-tabs-tabs_list__item--active */
     {
@@ -118,15 +118,15 @@ body .TPWL-template-header,
 
         /*border: 2px solid #777;*/
     }
-    .TPWL-widget #tpwl-main-form .mewtwo-widget--whitelabel_ru .mewtwo-tabs-tabs_list__item span{
+    .TPWL-widget #tpwl-main-form .mewtwo-tabs .mewtwo-tabs-tabs_list__item span{
         font-weight: 500!important;
         color: #00b1dd !important;
     }
-    .TPWL-widget #tpwl-main-form .mewtwo-widget--whitelabel_ru .mewtwo-tabs-tabs_list__item--active span {
+    .TPWL-widget #tpwl-main-form .mewtwo-tabs .mewtwo-tabs-tabs_list__item--active span {
         color: #777 !important;
     }
 
-    .TPWL-widget #tpwl-main-form label
+    .TPWL-widget #tpwl-main-form form label
         /*, .TPWL-widget #tpwl-preroll-form label, .TPWL-widget #tpwl-side-form label */
     {
         color: #777 !important;
@@ -139,43 +139,45 @@ body .TPWL-template-header,
         font-weight: 600 !important;
     }
     /*.mewtwo-widget--whitelabel_ru .mewtwo-flights-header__link, .mewtwo-widget--whitelabel_ru .mewtwo-flights label, */
-    .TPWL-widget .mewtwo-widget--whitelabel_ru .mewtwo-flights-link_to_multi
+    /*.TPWL-widget .mewtwo-widget .mewtwo-flights-link_to_multi*/
+    .TPWL-widget #tpwl-main-form form .mewtwo-flights-link_to_multi
     {
         /*color: #fff !important;*/
         /*color: #00c6f7!important; Hover*/
         color: #00b1dd!important;
     }
-    .TPWL-widget .mewtwo-widget--whitelabel_ru .mewtwo-flights-link_to_multi:before {
+
+    .TPWL-widget #tpwl-main-form form .mewtwo-flights-link_to_multi:before {
         /*background-image: url("data:image/svg+xml,%3Csvg%20width%3D%2217%22%20height%3D%2216%22%20viewBox%3D%220%200%2017%2016%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Ctitle%3Eicon%3C%2Ftitle%3E%3Cpath%20d%3D%22M11.885%202.893c2.242%201.3%203.41%203.22%203.452%205.613-.512-.266-.577-.232-1.12-.24-.157-1.71-.333-2.774-3.19-4.542C9.998%205.497%208.78%205.39%208.395%205.388c-1.475-.013-2.716-1.255-2.73-2.722C5.65%201.2%206.92-.014%208.394%200c1.384.012%202.64%201.125%202.787%202.468%200%200%20.43.264.705.425zM1.208%209.123c.095-2.59%201.242-4.52%203.335-5.683.005.577.066.62.315%201.1-1.436.943-2.294%201.598-2.514%204.95%202.05.08%202.528%201.202%202.706%201.544.68%201.31.167%202.987-1.122%203.688-1.288.7-2.955.15-3.636-1.158-.64-1.228-.246-2.86.87-3.62%200%200%20.033-.502.046-.82zm10.874%205.912c-2.27%201.252-4.515%201.264-6.59.068.493-.3.497-.375.783-.836%201.546.745%202.55%201.143%205.536-.395-.987-1.797-.27-2.786-.068-3.114.77-1.258%202.474-1.682%203.74-.94%201.26.745%201.65%202.457.878%203.714-.724%201.18-2.324%201.684-3.55%201.12%200%200-.448.23-.728.383z%22%20fill%3D%22%23fff%22%20fill-rule%3D%22evenodd%22%2F%3E%3C%2Fsvg%3E") !important;*/
         background-image: none !important;
     }
 }
 
 /* Form Button */
-.TPWL-widget .mewtwo-widget--whitelabel_ru .mewtwo-flights-submit_button button,
-.TPWL-widget .mewtwo-widget--whitelabel_ru .mewtwo-flights-multi-submit_button button,
-.TPWL-widget .mewtwo-widget--whitelabel_ru .mewtwo-hotels-submit_button button
+.TPWL-widget #tpwl-main-form form .mewtwo-flights-submit_button button,
+.TPWL-widget #tpwl-main-form form .mewtwo-flights-multi-submit_button button,
+.TPWL-widget #tpwl-main-form form .mewtwo-hotels-submit_button button
 {
     background: #35c014 !important;
 }
-.TPWL-widget .mewtwo-widget--whitelabel_ru .mewtwo-flights-submit_button button:hover,
-.TPWL-widget .mewtwo-widget--whitelabel_ru .mewtwo-flights-multi-submit_button button:hover,
-.TPWL-widget .mewtwo-widget--whitelabel_ru .mewtwo-hotels-submit_button button:hover
+.TPWL-widget #tpwl-main-form form .mewtwo-flights-submit_button button:hover,
+.TPWL-widget #tpwl-main-form form .mewtwo-flights-multi-submit_button button:hover,
+.TPWL-widget #tpwl-main-form form .mewtwo-hotels-submit_button button:hover
 {
     background: #35c014 !important;
 }
-.TPWL-widget #tpwl-main-form .mewtwo-flights-submit_button button,
-.TPWL-widget #tpwl-main-form .mewtwo-flights-multi-submit_button button,
-.TPWL-widget #tpwl-main-form .mewtwo-hotels-submit_button button
+.TPWL-widget #tpwl-main-form form .mewtwo-flights-submit_button button,
+.TPWL-widget #tpwl-main-form form .mewtwo-flights-multi-submit_button button,
+.TPWL-widget #tpwl-main-form form .mewtwo-hotels-submit_button button
 {
     font-size: 16px!important;
 }
-.TPWL-widget #tpwl-main-form .mewtwo-flights-multi-submit_button {
+.TPWL-widget #tpwl-main-form form .mewtwo-flights-multi-submit_button {
     margin-top: 0 !important;
 }
 
 /* Form Multi Route */
-.TPWL-widget .mewtwo-widget--whitelabel_ru .mewtwo-flights-multi {
+.TPWL-widget #tpwl-main-form form .mewtwo-flights-multi {
     background: none !important;
 }
 
