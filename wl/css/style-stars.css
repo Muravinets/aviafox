@@ -281,6 +281,11 @@ body .mewtwo-modal .mewtwo-custom_checkbox_wrapper {
         background-image: url('data:image/svg+xml;charset=utf-8,%3Csvg%20viewBox%3D%220%200%2018%2016%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Ctitle%3EFilter%3C%2Ftitle%3E%3Cpath%20d%3D%22M9%201v2H.51C.228%203%200%202.786%200%202.495v-.99C0%201.225.222%201%20.51%201H9zm0%2012v2H.51c-.282%200-.51-.214-.51-.505v-.99c0-.28.222-.505.51-.505H9zM3%207v2H.495C.222%209%200%208.786%200%208.495v-.99C0%207.225.216%207%20.495%207H3zm14.505-6c.273%200%20.495.214.495.505v.99c0%20.28-.216.505-.495.505H15V1h2.505zm0%2012c.273%200%20.495.214.495.505v.99c0%20.28-.216.505-.495.505H15v-2h2.505zm-.015-6c.282%200%20.51.214.51.505v.99c0%20.28-.222.505-.51.505H9V7h8.49zM14%202c0-1.105-.895-2-2-2s-2%20.895-2%202%20.895%202%202%202%202-.895%202-2zm0%2012c0-1.105-.895-2-2-2s-2%20.895-2%202%20.895%202%202%202%202-.895%202-2zM8%208c0-1.105-.895-2-2-2s-2%20.895-2%202%20.895%202%202%202%202-.895%202-2z%22%20fill%3D%22%23fff%22%20fill-rule%3D%22evenodd%22%2F%3E%3C%2Fsvg%3E') !important;
     }
 
+    /* Filters Sidebar */
+    .TPWL-widget .filters .right-text {
+        background: none !important;
+        /* background: linear-gradient(to right, rgba(247,247,247,0) 0%, #F7F7F7 30%); */
+    }
 
     /* Filters Dialog */
     .TPWL-widget .filters-header {
@@ -293,6 +298,22 @@ body .mewtwo-modal .mewtwo-custom_checkbox_wrapper {
     {
         background: 50% 50% no-repeat url('data:image/svg+xml;charset=utf-8,<svg%20viewBox%3D"0%200%2010%2016"%20xmlns%3D"http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg"><title>Arrow<%2Ftitle><path%20d%3D"M7.966%2016L9.5%2014.455S2.965%208%202.976%207.976L9.43%201.498%207.94%200%200%207.986%207.966%2016z"%20fill%3D"%237a7a7a"%20fill-rule%3D"evenodd"%2F><%2Fsvg>') !important;
     }
+
+    /* Mobile Ticket Info Dialog */
+    .TPWL-widget .TPWL_widget--xs .ticket-header .ticket-header__mobile_back_button {
+        background-image: url('data:image/svg+xml;charset=utf-8,%3Csvg%20viewBox%3D%220%200%2010%2016%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%3E%3Ctitle%3EClip%202%3C%2Ftitle%3E%3Cdefs%3E%3Cpath%20id%3D%22a%22%20d%3D%22M0%207.986L7.966%2016%209.5%2014.455S2.965%208%202.976%207.976L9.43%201.498%207.94%200%200%207.986z%22%2F%3E%3C%2Fdefs%3E%3Cuse%20fill%3D%22%237a7a7a%22%20xlink%3Ahref%3D%22%23a%22%20fill-rule%3D%22evenodd%22%2F%3E%3C%2Fsvg%3E') !important;
+    }
+    .TPWL-widget .ticket-header {
+        background-color: white !important;
+        color: #777 !important;
+    }
+    .TPWL-widget .ticket-action-proposals-item-link__price:before {
+        display: none !important;
+    }
+    .TPWL-widget .TPWL_widget--xs .ticket--expanded .ticket-action-proposals-item-link__gate {
+        line-height: 1.2 !important;
+    }
+
 }
 /************************************************/
 /*			 		Footer 	 					*/
