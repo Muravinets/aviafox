@@ -212,11 +212,12 @@ body .TPWL-template-header,
     background-image: url('data:image/svg+xml,%3Csvg%20width%3D%22100%22%20height%3D%22100%22%20viewBox%3D%220%200%20100%20100%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Ctitle%3ESlice%201%3C%2Ftitle%3E%3Cpath%20d%3D%22M98.17%2089.33L58.837%2050l39.33-39.33c2.442-2.442%202.442-6.397%200-8.84-2.438-2.44-6.395-2.44-8.837%200L50%2041.163%2010.67%201.832C8.23-.61%204.272-.61%201.83%201.83c-2.44%202.436-2.44%206.395%200%208.837L41.163%2050%201.832%2089.33c-2.442%202.442-2.442%206.397%200%208.84%202.44%202.44%206.395%202.44%208.837%200L50%2058.837l39.33%2039.33c2.442%202.442%206.4%202.442%208.84%200%202.44-2.44%202.44-6.395%200-8.837z%22%20fill%3D%22%237a7a7a%22%20fill-rule%3D%22evenodd%22%2F%3E%3C%2Fsvg%3E') !important;
 }
 
-.mewtwo-modal .mewtwo-autocomplete-list-item--shifted.mewtwo-autocomplete-list-item-info--active .mewtwo-autocomplete-list-item_text .mewtwo-autocomplete-list-item-info__name,
-.mewtwo-modal .mewtwo-autocomplete-list .mewtwo-autocomplete-list-item-info--active,
-.mewtwo-modal .mewtwo-autocomplete-list .mewtwo-autocomplete-list-item-info--active .mewtwo-autocomplete-list-item-info__bottom_block,
-.mewtwo-modal .mewtwo-autocomplete-list .mewtwo-autocomplete-list-item-info--active .mewtwo-autocomplete-list-item-info__details,
-.mewtwo-modal .mewtwo-autocomplete-list .mewtwo-autocomplete-list-item-info--active .mewtwo-autocomplete-list-item-info__right_block {
+body .mewtwo-modal .mewtwo-autocomplete-list-item--shifted.mewtwo-autocomplete-list-item-info--active .mewtwo-autocomplete-list-item_text .mewtwo-autocomplete-list-item-info__name,
+body .mewtwo-modal .mewtwo-autocomplete-list .mewtwo-autocomplete-list-item-info--active,
+body .mewtwo-modal .mewtwo-autocomplete-list .mewtwo-autocomplete-list-item-info--active .mewtwo-autocomplete-list-item-info__bottom_block,
+body .mewtwo-modal .mewtwo-autocomplete-list .mewtwo-autocomplete-list-item-info--active .mewtwo-autocomplete-list-item-info__details,
+body .mewtwo-modal .mewtwo-autocomplete-list .mewtwo-autocomplete-list-item-info--active .mewtwo-autocomplete-list-item-info__right_block
+{
     color: inherit!important;
 }
 
