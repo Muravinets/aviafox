@@ -240,16 +240,48 @@ body .mewtwo-modal .mewtwo-custom_checkbox_wrapper {
     /* Filters Button */
     .TPWL-widget .search_results-wrapper .show_filters_button {
         color: #7a7a7a !important;
+        color: #00b1dd !important;
     }
-    .TPWL-widget .search_results-wrapper .show_filters_button:before{
-        background:50% 50% no-repeat url('data:image/svg+xml;charset=utf-8,%3Csvg%20viewBox%3D%220%200%2018%2016%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Ctitle%3EFilter%3C%2Ftitle%3E%3Cpath%20d%3D%22M9%201v2H.51C.228%203%200%202.786%200%202.495v-.99C0%201.225.222%201%20.51%201H9zm0%2012v2H.51c-.282%200-.51-.214-.51-.505v-.99c0-.28.222-.505.51-.505H9zM3%207v2H.495C.222%209%200%208.786%200%208.495v-.99C0%207.225.216%207%20.495%207H3zm14.505-6c.273%200%20.495.214.495.505v.99c0%20.28-.216.505-.495.505H15V1h2.505zm0%2012c.273%200%20.495.214.495.505v.99c0%20.28-.216.505-.495.505H15v-2h2.505zm-.015-6c.282%200%20.51.214.51.505v.99c0%20.28-.222.505-.51.505H9V7h8.49zM14%202c0-1.105-.895-2-2-2s-2%20.895-2%202%20.895%202%202%202%202-.895%202-2zm0%2012c0-1.105-.895-2-2-2s-2%20.895-2%202%20.895%202%202%202%202-.895%202-2zM8%208c0-1.105-.895-2-2-2s-2%20.895-2%202%20.895%202%202%202%202-.895%202-2z%22%20fill%3D%22%237a7a7a%22%20fill-rule%3D%22evenodd%22%2F%3E%3C%2Fsvg%3E') !important;
+    .TPWL-widget .search_results-wrapper .show_filters_button:before {
+        background:50% 50% no-repeat url('data:image/svg+xml;charset=utf-8,%3Csvg%20viewBox%3D%220%200%2018%2016%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Ctitle%3EFilter%3C%2Ftitle%3E%3Cpath%20d%3D%22M9%201v2H.51C.228%203%200%202.786%200%202.495v-.99C0%201.225.222%201%20.51%201H9zm0%2012v2H.51c-.282%200-.51-.214-.51-.505v-.99c0-.28.222-.505.51-.505H9zM3%207v2H.495C.222%209%200%208.786%200%208.495v-.99C0%207.225.216%207%20.495%207H3zm14.505-6c.273%200%20.495.214.495.505v.99c0%20.28-.216.505-.495.505H15V1h2.505zm0%2012c.273%200%20.495.214.495.505v.99c0%20.28-.216.505-.495.505H15v-2h2.505zm-.015-6c.282%200%20.51.214.51.505v.99c0%20.28-.222.505-.51.505H9V7h8.49zM14%202c0-1.105-.895-2-2-2s-2%20.895-2%202%20.895%202%202%202%202-.895%202-2zm0%2012c0-1.105-.895-2-2-2s-2%20.895-2%202%20.895%202%202%202%202-.895%202-2zM8%208c0-1.105-.895-2-2-2s-2%20.895-2%202%20.895%202%202%202%202-.895%202-2z%22%20fill%3D%22%2300b1dd%22%20fill-rule%3D%22evenodd%22%2F%3E%3C%2Fsvg%3E') !important;
     }
     .TPWL-widget .search_results-wrapper .show_filters_button:hover {
-        color: white !important;
+        border: 1px dashed #00b1dd !important;
+        border-radius: 3px !important;
+        background: none !important;
+        box-sizing: border-box !important;
+        /*color: white !important;*/
+    }
+    .TPWL-widget .search_results-wrapper .show_filters_button:active {
+        border-style: solid !important;
     }
     .TPWL-widget .search_results-wrapper .show_filters_button:hover:before{
-        background:50% 50% no-repeat url('data:image/svg+xml;charset=utf-8,%3Csvg%20viewBox%3D%220%200%2018%2016%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Ctitle%3EFilter%3C%2Ftitle%3E%3Cpath%20d%3D%22M9%201v2H.51C.228%203%200%202.786%200%202.495v-.99C0%201.225.222%201%20.51%201H9zm0%2012v2H.51c-.282%200-.51-.214-.51-.505v-.99c0-.28.222-.505.51-.505H9zM3%207v2H.495C.222%209%200%208.786%200%208.495v-.99C0%207.225.216%207%20.495%207H3zm14.505-6c.273%200%20.495.214.495.505v.99c0%20.28-.216.505-.495.505H15V1h2.505zm0%2012c.273%200%20.495.214.495.505v.99c0%20.28-.216.505-.495.505H15v-2h2.505zm-.015-6c.282%200%20.51.214.51.505v.99c0%20.28-.222.505-.51.505H9V7h8.49zM14%202c0-1.105-.895-2-2-2s-2%20.895-2%202%20.895%202%202%202%202-.895%202-2zm0%2012c0-1.105-.895-2-2-2s-2%20.895-2%202%20.895%202%202%202%202-.895%202-2zM8%208c0-1.105-.895-2-2-2s-2%20.895-2%202%20.895%202%202%202%202-.895%202-2z%22%20fill%3D%22%23fff%22%20fill-rule%3D%22evenodd%22%2F%3E%3C%2Fsvg%3E') !important;
+        background:50% 50% no-repeat url('data:image/svg+xml;charset=utf-8,%3Csvg%20viewBox%3D%220%200%2018%2016%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Ctitle%3EFilter%3C%2Ftitle%3E%3Cpath%20d%3D%22M9%201v2H.51C.228%203%200%202.786%200%202.495v-.99C0%201.225.222%201%20.51%201H9zm0%2012v2H.51c-.282%200-.51-.214-.51-.505v-.99c0-.28.222-.505.51-.505H9zM3%207v2H.495C.222%209%200%208.786%200%208.495v-.99C0%207.225.216%207%20.495%207H3zm14.505-6c.273%200%20.495.214.495.505v.99c0%20.28-.216.505-.495.505H15V1h2.505zm0%2012c.273%200%20.495.214.495.505v.99c0%20.28-.216.505-.495.505H15v-2h2.505zm-.015-6c.282%200%20.51.214.51.505v.99c0%20.28-.222.505-.51.505H9V7h8.49zM14%202c0-1.105-.895-2-2-2s-2%20.895-2%202%20.895%202%202%202%202-.895%202-2zm0%2012c0-1.105-.895-2-2-2s-2%20.895-2%202%20.895%202%202%202%202-.895%202-2zM8%208c0-1.105-.895-2-2-2s-2%20.895-2%202%20.895%202%202%202%202-.895%202-2z%22%20fill%3D%22%2300b1dd%22%20fill-rule%3D%22evenodd%22%2F%3E%3C%2Fsvg%3E') !important;
     }
+
+    /* Mobile */
+    .TPWL-widget .TPWL_widget--xs .show_filters_wrapper .show_filters_button
+    {
+        /*background-color: #00b1dd !important;*/
+        background-color: rgba(0, 177, 221, 0.95) !important;
+        color: white !important;
+    }
+    .TPWL-widget .TPWL_widget--xs .show_filters_wrapper .show_filters_button:hover
+    {
+        border: none !important;
+        background-color: rgba(0, 177, 221, 1) !important;
+    }
+    .TPWL-widget .TPWL_widget--xs .show_filters_wrapper .show_filters_button:active
+    {
+        border: none !important;
+        background-color: rgba(0, 177, 221, 1) !important;
+    }
+
+    .TPWL-widget .TPWL_widget--xs .show_filters_wrapper .show_filters_button:before {
+        background-image: url('data:image/svg+xml;charset=utf-8,%3Csvg%20viewBox%3D%220%200%2018%2016%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Ctitle%3EFilter%3C%2Ftitle%3E%3Cpath%20d%3D%22M9%201v2H.51C.228%203%200%202.786%200%202.495v-.99C0%201.225.222%201%20.51%201H9zm0%2012v2H.51c-.282%200-.51-.214-.51-.505v-.99c0-.28.222-.505.51-.505H9zM3%207v2H.495C.222%209%200%208.786%200%208.495v-.99C0%207.225.216%207%20.495%207H3zm14.505-6c.273%200%20.495.214.495.505v.99c0%20.28-.216.505-.495.505H15V1h2.505zm0%2012c.273%200%20.495.214.495.505v.99c0%20.28-.216.505-.495.505H15v-2h2.505zm-.015-6c.282%200%20.51.214.51.505v.99c0%20.28-.222.505-.51.505H9V7h8.49zM14%202c0-1.105-.895-2-2-2s-2%20.895-2%202%20.895%202%202%202%202-.895%202-2zm0%2012c0-1.105-.895-2-2-2s-2%20.895-2%202%20.895%202%202%202%202-.895%202-2zM8%208c0-1.105-.895-2-2-2s-2%20.895-2%202%20.895%202%202%202%202-.895%202-2z%22%20fill%3D%22%23fff%22%20fill-rule%3D%22evenodd%22%2F%3E%3C%2Fsvg%3E') !important;
+    }
+
+
     /* Filters Dialog */
     .TPWL-widget .filters-header {
         color: #7a7a7a !important;
