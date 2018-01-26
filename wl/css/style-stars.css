@@ -221,6 +221,10 @@ body .mewtwo-modal .mewtwo-autocomplete-list .mewtwo-autocomplete-list-item-info
     color: inherit!important;
 }
 
+body .mewtwo-modal .mewtwo-custom_checkbox_wrapper {
+    border-color: black !important;
+}
+
 /************************************************/
 /*			 	Search Results 					*/
 /************************************************/
