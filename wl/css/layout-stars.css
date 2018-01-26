@@ -12,11 +12,13 @@ header img
 .image
 {
 	position: absolute;
+	height: 100%;
 }
 .image img
 {
     /*height: 517px;*/
-	height: 468px;
+    /*height: 468px;*/
+    width: 100%;
 }
 /************************************************/
 /*			 		Header 	 					*/

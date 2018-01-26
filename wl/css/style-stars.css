@@ -38,6 +38,11 @@ header img
 	-webkit-transform-style: preserve-3d;
 }
 
+.image
+{
+    background-color: #18274e;
+}
+
 header .site-title
 {
 	color: white;
@@ -218,6 +223,13 @@ body .TPWL-template-header,
 /************************************************/
 /*			 	Search Results 					*/
 /************************************************/
+.TPWL-widget .TPWL-template-search-results {
+    background-color: #EEEEEE;
+
+    /* Fix invalid space */
+    padding-bottom: 1px;
+    padding-top: 1px;
+}
 @media (max-width: 1079px)
 {
     /* Filters Button */
