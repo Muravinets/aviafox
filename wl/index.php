@@ -37,13 +37,13 @@
 <body>
 
 <div class="image">
-    <img src="/wl/img/sky-stars.jpg" />
+    <img src="/images/sky-stars.jpg" />
 </div>
 
 <header>
     <section class="top-bar">
         <div class="logo">
-            <a href="https://www.aviafox.com"><img src="/wl/img/logo-320x154.png" alt="Aviafox.com logo" title="Aviafox.com - поисковик авиабилетов" /></a>
+            <a href="https://www.aviafox.com"><img src="/images/logo-350x154.png" alt="Aviafox.com logo" title="Aviafox.com - поисковик авиабилетов" /></a>
         </div>
         <div class="site-title">ПОИСКОВИК АВИАБИЛЕТОВ</div>
     </section>

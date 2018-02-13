@@ -103,7 +103,7 @@ body .TPWL-template-header,
 
 /* Form */
 .TPWL-widget .TPWL-template-header.TPWL-template-header--sticky {
-    background: rgba(0, 0, 0, 0) url('https://www.aviafox.com/wl/img/sky-stars.jpg') !important;
+    background: rgba(0, 0, 0, 0) url('https://www.aviafox.com/images/sky-stars.jpg') !important;
     background-position-y: 70% !important;
     background-size: 100% 230% !important;
 }

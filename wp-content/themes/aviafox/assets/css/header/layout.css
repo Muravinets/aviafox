@@ -42,7 +42,7 @@ body > header
     }
     body > header
     {
-        background: rgba(0, 0, 0, 0) url('/wp-content/themes/aviafox/assets/images/sky-stars.jpg');
+        background: rgba(0, 0, 0, 0) url('/images/sky-stars.jpg');
         background-position-y: 70%;
         background-size: 100% 230%;
     }

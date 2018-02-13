@@ -18,13 +18,13 @@
 <body>
 
 <section class="bg-image">
-	<img src="//aviafox.com/web/images/sky-stars.jpg" />
+	<img src="//aviafox.com/images/sky-stars.jpg" />
 </section>
 
 <header>
 	<section class="top-bar">
         <section class="logo">
-        	<img src="//aviafox.com/web/images/logo-320x154.png" alt="Afiafox logo" />
+        	<img src="//aviafox.com/images/logo-350x154.png" alt="Afiafox logo" />
         </section>	
 		<section class="subtitle">Поисковик авиабилетов</section>
     </section>	
