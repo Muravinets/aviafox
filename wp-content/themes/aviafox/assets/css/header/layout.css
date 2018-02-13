@@ -73,10 +73,6 @@ body > header .site-title
     text-align: center;
     z-index: 2;
 }
-body > header .site-title
-{
-    margin-top: -0.5rem;
-}
 
 body > header .logo img
 {
@@ -88,9 +84,5 @@ body > header .logo img
     body > header .logo img
     {
         width: 25%;
-    }
-    body > header .site-title
-    {
-        margin-top: -1rem;
     }
 }
