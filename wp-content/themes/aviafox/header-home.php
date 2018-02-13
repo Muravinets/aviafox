@@ -12,7 +12,7 @@
  * @version 1.0
  */
 
-$styleVersion = '?v=' . ($_SERVER['HTTP_HOST'] == 'wp.aviafox.local' ? time() : '6.0');
+$styleVersion = '?v=' . ($_SERVER['HTTP_HOST'] == 'wp.aviafox.local' ? time() : '6.1');
 $headerType = isset($_GET['ht']) ? $_GET['ht'] : null;
 
 ?><!DOCTYPE html>
