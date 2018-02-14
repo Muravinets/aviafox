@@ -24,8 +24,8 @@ include 'config.php';
 	<meta property="og:site_name" content="Aviafox.com"/>
 <!--	<meta property="fb:admins" content="USER_ID"/>-->
 
-	<? $logoName = isset($_GET['logo_name']) ? $_GET['logo_name'] : 'logo-bg.jpg' ?>
-    <meta property="og:image" content="https://www.aviafox.com/web/images/<?= $logoName ?>"/>
+	<? $logoName = isset($_GET['logo_name']) ? $_GET['logo_name'] : 'card.jpg' ?>
+    <meta property="og:image" content="https://www.aviafox.com/images/<?= $logoName ?>"/>
 
 <!--    <meta property="og:image" content="https://www.aviafox.com/web/images/logo-square_256.jpg"/> <!-- для Viber -->-->
 <!--    <meta property="og:image" content="https://www.aviafox.com/web/images/logo-rectangle.jpg"/>-->
